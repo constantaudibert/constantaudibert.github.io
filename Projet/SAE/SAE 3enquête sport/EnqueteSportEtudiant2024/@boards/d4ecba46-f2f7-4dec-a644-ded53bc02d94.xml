@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<board bypass-restricted-results-access="0" version="1.0.10">
+  <name>
+    <fr><![CDATA[enquetesport]]></fr>
+  </name>
+  <options cascadingfilters="1" displaysampleinfo="1" displaysampleonanalysis="1" enableresponsive="0" displaynavigationbuttons="1" displaypaginationbar="1" paginationposition="Bottom">
+    <pageformat device-type="Desktop" width="1370" height="768" />
+    <format nbdecimalsnum="1" nbdecimalsper="0" variable-naming="Label" ignore-adjustment="0">
+      <filtering-options />
+      <header-format type="TEXT" size="24" />
+      <thresholds>
+        <ff ts="0.01" s="0.05" ps="0.15" />
+        <fn ts="0.01" s="0.05" ps="0.15" />
+        <nn ts="0.8" s="0.6" ps="0.4" />
+      </thresholds>
+    </format>
+    <runtimeexport allowexport="0" />
+  </options>
+  <skin id="2eb65577-001a-8df7-6b54-3f08db96b36f" name="SphinxDefaultSkin">
+    <colorset gradient="1" type="Pallet">
+      <colors>#5290E9;#71B37C;#EC932F;#FA6670;#C7C7C7;#e95290;#e9ab52;#52e9ab</colors>
+    </colorset>
+    <boardstyle background="#FFFFFF" viewbackground="rgba(101, 92, 100, 0.1)">
+      <borderstyle color="transparent" thickness="1" style="solid" radius="0" />
+    </boardstyle>
+    <analysisstyle background="transparent" significativepositivevalue="#3d8eb9" significativenegativevalue="#ea4c87">
+      <borderstyle color="transparent" thickness="1" style="solid" radius="0" />
+      <titlestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="14" color="#333" fontweight="1" fontstyle="0" />
+      <metricstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="1" />
+      <teststatstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="1" />
+    </analysisstyle>
+    <chartstyle verbatimfontfamily="Arial, Helvetica, sans-serif" backgroundcolor="transparent" xychartkeepthickness="1" animate="1">
+      <datalabelstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" automatic="1" />
+      <axevaluestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <axetitlestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <legendstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="1" fontstyle="0" />
+      <indicatorvalue fontfamily="Arial, Helvetica, sans-serif" fontsize="96" color="#333" fontweight="1" fontstyle="0" automatic="1" automaticfontsize="1" />
+      <indicatorvaluelabelstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <gaugeextremitylabelstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <filliconlabelstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <filliconvaluelabelstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#d6d6d6" fontweight="0" fontstyle="0" />
+      <separatorstyle color="#333" thickness="2" style="dashed" />
+      <xychartthickness enable="0" thickness="10" />
+    </chartstyle>
+    <tablestyle hovercolor="rgba(0, 0, 0, 0.15)" alternatingprincipalcolor="rgba(255, 255, 255, 0)" alternatingsecondcolor="rgba(0, 0, 0, 0.03)" totalbackgroundcolor="rgba(0, 0, 0, 0.07)" bordercolor="rgba(0, 0, 0, 0.1)" headercolor="transparent" cellchartbackgroundcolor="transparent">
+      <columntitlestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="1" fontstyle="0" />
+      <linetitlestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <cellstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <cellchartstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="11" color="#333" fontweight="0" fontstyle="0" automatic="1" />
+    </tablestyle>
+    <characteristicstablestyle>
+      <columntitlestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="1" fontstyle="0" />
+      <linetitlestyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="0" fontstyle="0" />
+      <cellstyle fontfamily="Arial, Helvetica, sans-serif" fontsize="12" color="#333" fontweight="1" fontstyle="0" />
+    </characteristicstablestyle>
+    <shapestyle fillcolor="#5290E9">
+      <borderstyle color="#333" thickness="1" style="solid" radius="0" />
+    </shapestyle>
+    <imagestyle effect="None" color="transparent" />
+    <viewtextstyle backgroundcolor="transparent">
+      <borderstyle color="transparent" thickness="1" style="solid" radius="0" />
+    </viewtextstyle>
+    <relationstyle>
+      <linestyle color="black" thickness="1" style="solid" />
+      <colors>rgb(255, 255, 255);rgb(202, 217, 210);rgb(143, 206, 174);rgb(11, 201, 106);rgb(255, 255, 255);rgb(202, 217, 210);rgb(143, 206, 174);rgb(11, 201, 106);rgb(255, 255, 255);rgb(202, 217, 210);rgb(143, 206, 174);rgb(11, 201, 106)</colors>
+    </relationstyle>
+  </skin>
+  <dataproviders>
+    <provider type="WebSurvey" account="iq" survey="EnqueteSportEtudiant2024" id="bf5ea3c2-1ad2-4945-b067-abf534731c8d" />
+  </dataproviders>
+  <filters device-type="Desktop">
+    <filter id="90db1bfc-bfb4-456e-898f-e0182e2ecf8f">
+      <skin />
+      <scenarii>
+        <scenario trigger="OnClick">
+          <action type="Filter" analysis="" items="" showglobalsample="0" />
+        </scenario>
+      </scenarii>
+      <title visible="1">sante</title>
+      <view visible="1" type="List" multi="1" values="1" />
+      <data type="Flat">
+        <field>
+          <source itemid="1900164033" />
+          <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+            <item id="1900164033" />
+          </provider>
+          <options noresponse="0" notconcerned="0">
+            <categories enabled="0" showleafs="1" />
+            <itemweights enabled="0" />
+            <simplify>
+              <frequencies enabled="1" />
+            </simplify>
+            <format />
+          </options>
+          <images />
+        </field>
+        <trend>
+          <field>
+            <source itemid="1158723245">
+              <alias>
+                <fr auto="1"><![CDATA[Date de saisie]]></fr>
+              </alias>
+            </source>
+            <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+              <item id="1158723245" />
+              <alias>
+                <fr auto="1"><![CDATA[Date de saisie]]></fr>
+              </alias>
+            </provider>
+            <options noresponse="0" notconcerned="0">
+              <dateclasses enabled="1" format="DAY_MONTH_YEAR4" />
+              <simplify>
+                <frequencies enabled="1" />
+              </simplify>
+              <format dateformat="G" />
+            </options>
+            <images />
+          </field>
+        </trend>
+        <sort type="None" direction="Descending" useshownvalue="1" />
+        <format nbdecimalsnum="1" nbdecimalsper="0" variable-naming="Label" ignore-adjustment="0">
+          <filtering-options />
+          <header-format type="TEXT" size="24" />
+        </format>
+      </data>
+    </filter>
+  </filters>
+  <pages device-type="Desktop">
+    <canvas id="f0b99c60-a92d-4181-aee8-9a441532216f">
+      <page-name>
+        <fr><![CDATA[]]></fr>
+      </page-name>
+      <analysis id="ea1949b6-f1aa-48c4-8eeb-060c9b82d563" canvas-top="418" canvas-left="573" canvas-height="350" canvas-width="660" canvas-mask="0" canvas-zindex="2" canvas-rotate="0">
+        <skin />
+        <scenarii />
+        <title visible="1">
+          <fr auto="1"><![CDATA[Croisement : Faites-vous du sport actuellement? / Pratiquez-vous au moins un sport en compétition?]]></fr>
+        </title>
+        <description value="0" icon="fa-info-circle" iconcolor="rgb(51,51,51)" backgroundcolor="#1c1e21" placement="Right">
+          <text />
+        </description>
+        <table visible="0" type="ValuesTable">
+          <display height="300" columnswidth="[]" />
+          <export xls="0" />
+          <values chartheight="20" verbatim-display="Table" verbatim-display-mode="Record" thema-polarity-display="Detailed" showgraphvalues="1">
+            <columns count="1" percent="None" percentchart="None" counts="0" percents="0" theoreticalfrequency="0" deviationfromtheoretical="0" testcellskhi2symbol="0" testcellskhi2pvalue="0" crosscount="0" crosspercent="0">
+              <showVariations enabled="0" variationsmode="Thresholds" thresholdsmode="Percent" showlegend="0" legenddisplaytype="Row">
+                <thresholds>
+                  <threshold icon="arrow-circle-right high" color="#249e50" value="50" />
+                  <threshold icon="arrow-circle-right high" color="#8bc34a" value="20" />
+                  <threshold icon="none" color="#fefefe" value="-20" />
+                  <threshold icon="arrow-circle-right low" color="#ffa726" value="-50" />
+                  <threshold icon="arrow-circle-right low" color="#f75d3f" />
+                </thresholds>
+                <displayoptions showgap="0" showicon="1" selectedtype="Percent" />
+                <referencemethod method="PreviousColumn" />
+              </showVariations>
+              <conditional-displays />
+            </columns>
+            <total enabled="1" value="Row, Column" />
+          </values>
+        </table>
+        <chart visible="1" showtotal="0" selected="XYAxisChart" placement="Right">
+          <legend show="0" horizontalalign="right" verticalalign="middle" layout="vertical" floating="0" />
+          <showvalue available="1" value="1" position="Outside" showcontentnames="0" showcontentvalue="1" />
+          <grid showgrid="0" showgraduations="1" />
+          <limits available="1" value="0" />
+          <xyaxischart charttype="Column" transpose="0" showresultsbutton="0">
+            <chartheight enabled="0" value="150" />
+            <rlnoptions threshold="5" stepbystep="1" computevif="1" />
+          </xyaxischart>
+          <values count="0" percent="Row" crosscount="0" crosspercent="0" selected="Count" />
+        </chart>
+        <metrics visible="0" />
+        <test-stat visible="1" crosskhi2="1" />
+        <colorizesignificantvalues enabled="1" value="All" />
+        <data type="Cross">
+          <rows>
+            <field>
+              <source itemid="1498844266" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="1498844266" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="1" showleafs="1" hidden="DVUBXO">
+                  <category itemsids="HNVKAG">
+                    <fr auto="1"><![CDATA[Oui]]></fr>
+                  </category>
+                </categories>
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </rows>
+          <columns>
+            <field>
+              <source itemid="1748758644" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="1748758644" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="1" showleafs="1">
+                  <category itemsids="LSFXYT">
+                    <fr auto="1"><![CDATA[Oui]]></fr>
+                  </category>
+                  <category itemsids="GFCESS">
+                    <fr auto="1"><![CDATA[Non]]></fr>
+                  </category>
+                </categories>
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </columns>
+          <sort type="None" direction="Descending" statvalue="Count" useshownvalue="1">
+            <simplify enabled="1" nbelements="100" regroup="1" ignoreHidden="0">
+              <regrouplabel>
+                <fr><![CDATA[...]]></fr>
+                <en><![CDATA[...]]></en>
+                <de><![CDATA[…]]></de>
+                <es><![CDATA[…]]></es>
+                <it><![CDATA[...]]></it>
+                <nl><![CDATA[...]]></nl>
+                <pl><![CDATA[...]]></pl>
+                <pt><![CDATA[...]]></pt>
+              </regrouplabel>
+            </simplify>
+          </sort>
+          <format nbdecimalsnum="1" nbdecimalsper="0" variable-naming="Label" ignore-adjustment="0">
+            <filtering-options />
+            <header-format type="TEXT" size="24" />
+          </format>
+        </data>
+      </analysis>
+      <analysis id="0d7c848a-e666-495d-83d9-84630b35e398" canvas-top="0" canvas-left="3" canvas-height="350" canvas-width="660" canvas-mask="0" canvas-zindex="3" canvas-rotate="0">
+        <skin />
+        <scenarii />
+        <title visible="1">
+          <fr auto="1"><![CDATA[Croisement : Pourquoi ne vous êtes-vous pas inscrit aux activités proposées par le SUAPS ? / Avez-vous fait du sport auparavant ?]]></fr>
+        </title>
+        <description value="0" icon="fa-info-circle" iconcolor="rgb(51,51,51)" backgroundcolor="#1c1e21" placement="Right">
+          <text />
+        </description>
+        <table visible="0" type="ValuesTable">
+          <display height="300" columnswidth="[]" />
+          <export xls="0" />
+          <values chartheight="20" verbatim-display="Table" verbatim-display-mode="Record" thema-polarity-display="Detailed" showgraphvalues="1">
+            <columns count="0" percent="Row" percentchart="None" counts="0" percents="0" theoreticalfrequency="0" deviationfromtheoretical="0" testcellskhi2symbol="0" testcellskhi2pvalue="0" crosscount="0" crosspercent="0">
+              <showVariations enabled="0" variationsmode="Thresholds" thresholdsmode="Percent" showlegend="0" legenddisplaytype="Row">
+                <thresholds>
+                  <threshold icon="arrow-circle-right high" color="#249e50" value="50" />
+                  <threshold icon="arrow-circle-right high" color="#8bc34a" value="20" />
+                  <threshold icon="none" color="#fefefe" value="-20" />
+                  <threshold icon="arrow-circle-right low" color="#ffa726" value="-50" />
+                  <threshold icon="arrow-circle-right low" color="#f75d3f" />
+                </thresholds>
+                <displayoptions showgap="0" showicon="1" selectedtype="Percent" />
+                <referencemethod method="PreviousColumn" />
+              </showVariations>
+              <conditional-displays />
+            </columns>
+            <total enabled="1" value="Row, Column" />
+          </values>
+        </table>
+        <chart visible="1" showtotal="0" selected="XYAxisChart" placement="Right">
+          <legend show="0" horizontalalign="center" verticalalign="bottom" layout="horizontal" floating="0" />
+          <showvalue available="1" value="1" position="Outside" showcontentnames="0" showcontentvalue="1" />
+          <grid showgrid="0" showgraduations="1" />
+          <limits available="1" value="0" />
+          <xyaxischart charttype="Column" transpose="0" showresultsbutton="0">
+            <chartheight enabled="0" value="150" />
+            <rlnoptions threshold="5" stepbystep="1" computevif="1" />
+          </xyaxischart>
+          <values count="0" percent="Row" crosscount="0" crosspercent="0" selected="Percent" />
+        </chart>
+        <metrics visible="0" />
+        <test-stat visible="1" crosskhi2="1" />
+        <colorizesignificantvalues enabled="1" value="All" />
+        <data type="Cross">
+          <rows>
+            <field>
+              <source itemid="773500450" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="773500450" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="0" showleafs="1" />
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </rows>
+          <columns>
+            <field>
+              <source itemid="457297885" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="457297885" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="0" showleafs="1" />
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </columns>
+          <sort type="None" direction="Descending" statvalue="PercentRow" useshownvalue="1">
+            <simplify enabled="1" nbelements="100" regroup="1" ignoreHidden="0">
+              <regrouplabel>
+                <fr><![CDATA[...]]></fr>
+                <en><![CDATA[...]]></en>
+                <de><![CDATA[…]]></de>
+                <es><![CDATA[…]]></es>
+                <it><![CDATA[...]]></it>
+                <nl><![CDATA[...]]></nl>
+                <pl><![CDATA[...]]></pl>
+                <pt><![CDATA[...]]></pt>
+              </regrouplabel>
+            </simplify>
+          </sort>
+          <format nbdecimalsnum="1" nbdecimalsper="0" variable-naming="Label" ignore-adjustment="0">
+            <filtering-options />
+            <header-format type="TEXT" size="24" />
+          </format>
+        </data>
+      </analysis>
+      <analysis id="7e12b08f-ec00-468c-9e41-3bfdd0afdeb1" canvas-top="340" canvas-left="8" canvas-height="298" canvas-width="521" canvas-mask="0" canvas-zindex="4" canvas-rotate="0">
+        <skin />
+        <scenarii />
+        <title visible="1">
+          <fr auto="1"><![CDATA[Croisement : Faites-vous du sport actuellement? / Vous êtes :]]></fr>
+        </title>
+        <description value="0" icon="fa-info-circle" iconcolor="rgb(51,51,51)" backgroundcolor="#1c1e21" placement="Right">
+          <text />
+        </description>
+        <table visible="0" type="ValuesTable">
+          <display height="300" columnswidth="[]" />
+          <export xls="0" />
+          <values chartheight="20" verbatim-display="Table" verbatim-display-mode="Record" thema-polarity-display="Detailed" showgraphvalues="1">
+            <columns count="0" percent="Row" percentchart="None" counts="0" percents="0" theoreticalfrequency="0" deviationfromtheoretical="0" testcellskhi2symbol="0" testcellskhi2pvalue="0" crosscount="0" crosspercent="0">
+              <showVariations enabled="0" variationsmode="Thresholds" thresholdsmode="Percent" showlegend="0" legenddisplaytype="Row">
+                <thresholds>
+                  <threshold icon="arrow-circle-right high" color="#249e50" value="50" />
+                  <threshold icon="arrow-circle-right high" color="#8bc34a" value="20" />
+                  <threshold icon="none" color="#fefefe" value="-20" />
+                  <threshold icon="arrow-circle-right low" color="#ffa726" value="-50" />
+                  <threshold icon="arrow-circle-right low" color="#f75d3f" />
+                </thresholds>
+                <displayoptions showgap="0" showicon="1" selectedtype="Percent" />
+                <referencemethod method="PreviousColumn" />
+              </showVariations>
+              <conditional-displays />
+            </columns>
+            <total enabled="1" value="Row, Column" />
+          </values>
+        </table>
+        <chart visible="1" showtotal="0" selected="XYAxisChart" placement="Right">
+          <legend show="1" horizontalalign="right" verticalalign="middle" layout="vertical" floating="0" />
+          <showvalue available="1" value="1" position="Outside" showcontentnames="0" showcontentvalue="1" />
+          <grid showgrid="0" showgraduations="1" />
+          <limits available="1" value="0" />
+          <xyaxischart charttype="Column" transpose="0" showresultsbutton="0">
+            <chartheight enabled="0" value="150" />
+            <rlnoptions threshold="5" stepbystep="1" computevif="1" />
+          </xyaxischart>
+          <values count="0" percent="Row" crosscount="0" crosspercent="0" selected="Percent" />
+        </chart>
+        <metrics visible="0" />
+        <test-stat visible="0" crosskhi2="1" />
+        <colorizesignificantvalues enabled="0" value="All" />
+        <data type="Cross">
+          <rows>
+            <field>
+              <source itemid="1498844266" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="1498844266" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="0" showleafs="1" />
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </rows>
+          <columns>
+            <field>
+              <source itemid="1165714199" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="1165714199" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="0" showleafs="1" />
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </columns>
+          <sort type="None" direction="Descending" statvalue="PercentRow" useshownvalue="1">
+            <simplify enabled="1" nbelements="100" regroup="1" ignoreHidden="0">
+              <regrouplabel>
+                <fr><![CDATA[...]]></fr>
+                <en><![CDATA[...]]></en>
+                <de><![CDATA[…]]></de>
+                <es><![CDATA[…]]></es>
+                <it><![CDATA[...]]></it>
+                <nl><![CDATA[...]]></nl>
+                <pl><![CDATA[...]]></pl>
+                <pt><![CDATA[...]]></pt>
+              </regrouplabel>
+            </simplify>
+          </sort>
+          <format nbdecimalsnum="1" nbdecimalsper="0" variable-naming="Label" ignore-adjustment="0">
+            <filtering-options />
+            <header-format type="TEXT" size="24" />
+          </format>
+        </data>
+      </analysis>
+      <analysis id="0ef86281-0718-4270-a88b-37dd7f906214" canvas-top="60" canvas-left="734" canvas-height="325" canvas-width="491" canvas-mask="0" canvas-zindex="5" canvas-rotate="0">
+        <skin />
+        <scenarii />
+        <title visible="1">
+          <fr auto="1"><![CDATA[Croisement : Vous êtes : / Faites-vous du sport actuellement?]]></fr>
+        </title>
+        <description value="0" icon="fa-info-circle" iconcolor="rgb(51,51,51)" backgroundcolor="#1c1e21" placement="Right">
+          <text />
+        </description>
+        <table visible="0" type="ValuesTable">
+          <display height="300" columnswidth="[]" />
+          <export xls="0" />
+          <values chartheight="20" verbatim-display="Table" verbatim-display-mode="Record" thema-polarity-display="Detailed" showgraphvalues="1">
+            <columns count="0" percent="Row" percentchart="None" counts="0" percents="0" theoreticalfrequency="0" deviationfromtheoretical="0" testcellskhi2symbol="0" testcellskhi2pvalue="0" crosscount="0" crosspercent="0">
+              <showVariations enabled="0" variationsmode="Thresholds" thresholdsmode="Percent" showlegend="0" legenddisplaytype="Row">
+                <thresholds>
+                  <threshold icon="arrow-circle-right high" color="#249e50" value="50" />
+                  <threshold icon="arrow-circle-right high" color="#8bc34a" value="20" />
+                  <threshold icon="none" color="#fefefe" value="-20" />
+                  <threshold icon="arrow-circle-right low" color="#ffa726" value="-50" />
+                  <threshold icon="arrow-circle-right low" color="#f75d3f" />
+                </thresholds>
+                <displayoptions showgap="0" showicon="1" selectedtype="Percent" />
+                <referencemethod method="PreviousColumn" />
+              </showVariations>
+              <conditional-displays />
+            </columns>
+            <total enabled="1" value="Row, Column" />
+          </values>
+        </table>
+        <chart visible="1" showtotal="0" selected="XYAxisChart" placement="Right">
+          <legend show="0" horizontalalign="right" verticalalign="middle" layout="vertical" floating="0" />
+          <showvalue available="1" value="1" position="Outside" showcontentnames="0" showcontentvalue="1" />
+          <grid showgrid="0" showgraduations="1" />
+          <limits available="1" value="0" />
+          <xyaxischart charttype="Column" transpose="0" showresultsbutton="0">
+            <chartheight enabled="0" value="150" />
+            <rlnoptions threshold="5" stepbystep="1" computevif="1" />
+          </xyaxischart>
+          <values count="0" percent="Row" crosscount="0" crosspercent="0" selected="Percent" />
+        </chart>
+        <metrics visible="0" />
+        <test-stat visible="1" crosskhi2="1" />
+        <colorizesignificantvalues enabled="1" value="All" />
+        <data type="Cross">
+          <rows>
+            <field>
+              <source itemid="1165714199" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="1165714199" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="0" showleafs="1" />
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </rows>
+          <columns>
+            <field>
+              <source itemid="1498844266" />
+              <provider id="bf5ea3c2-1ad2-4945-b067-abf534731c8d">
+                <item id="1498844266" />
+              </provider>
+              <options noresponse="0" notconcerned="0">
+                <categories enabled="0" showleafs="1" />
+                <itemweights enabled="0" />
+                <simplify>
+                  <frequencies enabled="1" />
+                </simplify>
+                <format />
+              </options>
+              <images />
+            </field>
+          </columns>
+          <sort type="None" direction="Descending" statvalue="PercentRow" useshownvalue="1">
+            <simplify enabled="1" nbelements="100" regroup="1" ignoreHidden="0">
+              <regrouplabel>
+                <fr><![CDATA[...]]></fr>
+                <en><![CDATA[...]]></en>
+                <de><![CDATA[…]]></de>
+                <es><![CDATA[…]]></es>
+                <it><![CDATA[...]]></it>
+                <nl><![CDATA[...]]></nl>
+                <pl><![CDATA[...]]></pl>
+                <pt><![CDATA[...]]></pt>
+              </regrouplabel>
+            </simplify>
+          </sort>
+          <format nbdecimalsnum="1" nbdecimalsper="0" variable-naming="Label" ignore-adjustment="0">
+            <filtering-options />
+            <header-format type="TEXT" size="24" />
+          </format>
+        </data>
+      </analysis>
+    </canvas>
+  </pages>
+</board>

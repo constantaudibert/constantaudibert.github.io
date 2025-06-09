@@ -1,0 +1,2789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sphinx>
+  <questionnaire version="3.6" build="0" writer="io 3.6">
+    <header>
+      <history>8.5.2(UNIVERSITE DE POITIERS);8.6.1(UNIVERSITE DE POITIERS);8.7.2(UNIVERSITE DE POITIERS);</history>
+      <langs current="FR">
+        <lang>FR</lang>
+      </langs>
+      <title>
+        <fr>EnquêteSportEtudiant2024</fr>
+      </title>
+      <comments />
+      <period />
+      <organism />
+    </header>
+    <items>
+      <part id="399887493" name="Pour_mieux_vous_connaitre" isexpanded="1">
+        <label>
+          <fr>Pour mieux vous connaître</fr>
+        </label>
+        <shortlabel />
+        <variable type="FU" id="1165714199" name="sexe">
+          <label>
+            <fr>Vous êtes :</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="QWRYMB">
+              <label>
+                <fr>Une femme</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="QRXZBD">
+              <label>
+                <fr>Un homme</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1059955867" name="deptgeo">
+          <label>
+            <fr>Quel est votre département géographique d'origine (celui de votre domicile familial)?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <modalities>
+            <m id="ATGVGD">
+              <label>
+                <fr>79</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="SZTCDB">
+              <label>
+                <fr>86</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="HPYXUZ">
+              <label>
+                <fr>16</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="FZLLGM">
+              <label>
+                <fr>17</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="YAYILV">
+              <label>
+                <fr>85</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="LYQRYD">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="85142256" name="deptgeo_Autre" cordial="0">
+          <label>
+            <fr>Si autre, 
+précisez le numéro de département :</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <text nbcharline="0" nblines="1" />
+        </variable>
+        <variable type="FU" id="1274751448" name="deptformation">
+          <label>
+            <fr>Dans quel département de formation êtes-vous inscrit?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="EKDLUC">
+              <label>
+                <fr>SD</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="WOTQQX">
+              <label>
+                <fr>GEA</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="CTWXUC">
+              <label>
+                <fr>HSE</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1243672546" name="niveau">
+          <label>
+            <fr>Précisez votre niveau de formation :</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="RPNTWG">
+              <label>
+                <fr>BUT1</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="FJOYRF">
+              <label>
+                <fr>BUT2</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="KPQVSJ">
+              <label>
+                <fr>BUT3</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="VUFJOR">
+              <label>
+                <fr>Licence Pro</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="294407225" name="reprise">
+          <label>
+            <fr>Etes-vous en situation de reprise d'études?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="TIJBGR">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="YNDOAJ">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="2096077477" name="alternant">
+          <label>
+            <fr>Etes-vous alternant?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="PKOXGK">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="OYWNFB">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1910881244" name="bourse">
+          <label>
+            <fr>Bénéficiez-vous d'une bourse d'enseignement supérieur?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si alternant parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>alternant</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="GGANCA">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="XIBVAO">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1977398967" name="travail">
+          <label>
+            <fr>Avez-vous un travail rémunéré régulier pendant vos études?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si alternant parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>alternant</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="VYNUVP">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="VFDHVA">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="515661102" name="logement">
+          <label>
+            <fr>Dans le cadre de vos études à Niort, vous êtes :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <modalities>
+            <m id="MCNLAU">
+              <label>
+                <fr>Locataire</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="KPICFO">
+              <label>
+                <fr>Domicilié.e chez vos (ou un de vos ) parents</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="OSTGOO">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="451260924" name="logement_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <text nbcharline="0" nblines="1" />
+        </variable>
+        <variable type="FU" id="1943393324" name="fumer">
+          <label>
+            <fr>Fumez-vous?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="BBDVGE">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="BGTZAX">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1307793945" name="alimentation">
+          <label>
+            <fr>Estimez-vous être attentif à votre alimentation ?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="TXEXZK">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="XVYLMD">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1900164033" name="sante">
+          <label>
+            <fr>Estimez-vous être en bonne santé ?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="ZYTHRO">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="EWUPPK">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1468185353" name="fan">
+          <label>
+            <fr>Vous décrivez-vous comme "fan de sport"</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="FBQKUX">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="AQULDH">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+      </part>
+      <part id="1117762624" name="Le_sport_et_vous" isexpanded="1">
+        <label>
+          <fr>Le sport et vous</fr>
+        </label>
+        <shortlabel />
+        <variable type="FU" id="1498844266" name="sport">
+          <label>
+            <fr>Faites-vous du sport actuellement?</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="HNVKAG">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="DVUBXO">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="773500450" name="raisonnonsuaps">
+          <label>
+            <fr>Pourquoi ne vous êtes-vous pas inscrit aux activités proposées par le SUAPS ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+La question n'est pertinente que si sport parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="CHBZIL">
+              <label>
+                <fr>Les activités proposées ne vous conviennent pas</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="TBNTMU">
+              <label>
+                <fr>Les horaires sont inadaptés</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="YSYPQF">
+              <label>
+                <fr>Vous n'avez pas envie de faire du sport</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZLHBCS">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="104986475" name="raisonnonsuaps_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sport parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FU" id="457297885" name="sportavant">
+          <label>
+            <fr>Avez-vous fait du sport auparavant ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sport parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="YLCMAQ">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="AOBAET">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FM" id="777894771" name="typessportavant">
+          <label>
+            <fr>Si vous avez fait du sport auparavant, quel.s type.s de sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si sportavant parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="9" />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="SJWGMC">
+              <label>
+                <fr>Football</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="MCCXUM">
+              <label>
+                <fr>Sport collectif autre que foot</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="KIOCIM">
+              <label>
+                <fr>Gym, fitness, zumba...</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="HQDURW">
+              <label>
+                <fr>Sport de raquette</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="THFZHS">
+              <label>
+                <fr>Sport d'eau</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="LTFYQZ">
+              <label>
+                <fr>Running, athlétisme</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZZXXOR">
+              <label>
+                <fr>Cyclisme</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZTTHBW">
+              <label>
+                <fr>Yoga</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="WRNPRF">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="2051643862" name="typessportavant_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sportavant parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FU" id="1707979975" name="raisonarretsport">
+          <label>
+            <fr>Pour quelle raison principale avez-vous arrêté de faire du sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+La question n'est pertinente que si sportavant parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="SHVGMW">
+              <label>
+                <fr>Manque de temps</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="DQLNOQ">
+              <label>
+                <fr>Plus d'envie</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="TJKBON">
+              <label>
+                <fr>Difficultés pratiques</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="SBGJJV">
+              <label>
+                <fr>Difficultés financières</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="FKABUB">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="1728404030" name="raisonarretsport_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sportavant parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FU" id="1009881424" name="covid">
+          <label>
+            <fr>La crise COVID a t'elle modifié votre "comportement sportif"?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sportavant parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="EYSZMF">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="XNVJMB">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1463215038" name="raisonjamaissport">
+          <label>
+            <fr>Pour quelle raison principale n'avez-vous jamais fait de sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+La question n'est pertinente que si sportavant parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="CLFICQ">
+              <label>
+                <fr>Manque de temps</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="EVBZUR">
+              <label>
+                <fr>Pas d'envie</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="EINEAH">
+              <label>
+                <fr>Difficultés pratiques</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="DSDUWB">
+              <label>
+                <fr>Difficultés financières</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZPKFFR">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="626541665" name="raisonjamaissport_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sportavant parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>sportavant</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FM" id="1176619774" name="cadresport">
+          <label>
+            <fr>Dans quel cadre faites-vous du sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si sport parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="2" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="YEBKGC">
+              <label>
+                <fr>Dans le cadre du SUAPS</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="XDCZEM">
+              <label>
+                <fr>En dehors du SUAPS</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FM" id="648354709" name="sportsuaps">
+          <label>
+            <fr>Quel.s type.s de sport pratiquez-vous?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si cadresport parmi "Dans le cadre du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="7" />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="YANFUN">
+              <label>
+                <fr>Futsal</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="GISHKT">
+              <label>
+                <fr>Basket</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="XXTEFE">
+              <label>
+                <fr>Volley</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="TWSNWL">
+              <label>
+                <fr>Natation</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="LDITQX">
+              <label>
+                <fr>Escalade</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="KIRVBI">
+              <label>
+                <fr>Badminton</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="KOEELJ">
+              <label>
+                <fr>Musculation</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1393790641" name="heuressuaps">
+          <label>
+            <fr>Combien d'heures par semaine consacrez-vous en moyenne aux activités SUAPS ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "Dans le cadre du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="GLGZUZ">
+              <label>
+                <fr>1h ou moins</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZUJEXY">
+              <label>
+                <fr>2h</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="CCVKTQ">
+              <label>
+                <fr>3h ou plus</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1655348329" name="bonif">
+          <label>
+            <fr>Votre objectif est-il d'être évalué pour bénéficier de la bonification ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "Dans le cadre du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="AOKIGK">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ELJITW">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="606542041" name="satisfsuaps">
+          <label>
+            <fr>Etes-vous globalement satisfait du SUAPS</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "Dans le cadre du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="RLOEWS">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="DPBSDI">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FM" id="405006424" name="raisonnonsatisfsuaps">
+          <label>
+            <fr>Si non, pour quelle.s raison.s ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si satisfsuaps parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="4" />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>satisfsuaps</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="UKBPIB">
+              <label>
+                <fr>Horaires</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZFXTKI">
+              <label>
+                <fr>Lieux</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="TREUWJ">
+              <label>
+                <fr>Activités proposées</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="SEPPSA">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="400071104" name="raisonnonsatisfsuaps_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si satisfsuaps parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>satisfsuaps</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FM" id="140401905" name="lieu">
+          <label>
+            <fr>Où pratiquez-vous?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="3" />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="YKNXVV">
+              <label>
+                <fr>A Niort</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="TQMYQZ">
+              <label>
+                <fr>Près de votre domicile familial</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="SVPSGT">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="198262280" name="lieu_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FM" id="2034988927" name="sportsnonsuaps">
+          <label>
+            <fr>Quel.s type.s de sport pratiquez-vous?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="9" />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="QXMBWH">
+              <label>
+                <fr>Football</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="VDYKIC">
+              <label>
+                <fr>Sport collectif auttre que foot</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="GDMLQQ">
+              <label>
+                <fr>Gym, fitness, zumba...</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="OOVTJY">
+              <label>
+                <fr>Sport de raquette</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="GUENPK">
+              <label>
+                <fr>Sport d'eau</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="MJSVSA">
+              <label>
+                <fr>Running, athlétisme</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="MSTIUW">
+              <label>
+                <fr>Cyclisme</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="MDGDTP">
+              <label>
+                <fr>Yoga</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="JPUOVU">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="1665187591" name="sportsnonsuaps_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FM" id="463812251" name="cadrenonsuaps">
+          <label>
+            <fr>Dans quel.s cadre.s pratiquez-vous?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Vous pouvez cocher plusieurs cases.
+La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <multiple maxresponse="2" />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="MYWSGM">
+              <label>
+                <fr>Club, association</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="IYEHTI">
+              <label>
+                <fr>Pratique libre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="662259114" name="tempsnonsuaps">
+          <label>
+            <fr>Combien d'heures par semaine consacrez-vous à ces activités sportives?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="FXPWRQ">
+              <label>
+                <fr>1h</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ABPHVS">
+              <label>
+                <fr>2h</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="BFZGPI">
+              <label>
+                <fr>3h</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="CKKSJG">
+              <label>
+                <fr>4h ou plus</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1748758644" name="compet">
+          <label>
+            <fr>Pratiquez-vous au moins un sport en compétition?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si cadresport parmi "En dehors du SUAPS".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>cadresport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="LSFXYT">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="GFCESS">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+      </part>
+      <part id="1811206599" name="Votre_avis_sur_le_sport" isexpanded="1">
+        <label>
+          <fr>Votre avis sur le sport ?</fr>
+        </label>
+        <shortlabel />
+        <variable type="FU" id="730573318" name="motiv">
+          <label>
+            <fr>Quelle est votre motivation principale à faire du sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+La question n'est pertinente que si sport parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="UAXGFM">
+              <label>
+                <fr>Etre en forme</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="OHUYPI">
+              <label>
+                <fr>S'amuser</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="MOWAYD">
+              <label>
+                <fr>Evacuer les tensions</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="BUFXNI">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="1561044438" name="motiv_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sport parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FU" id="1527721258" name="passersport">
+          <label>
+            <fr>Pourriez-vous vous passer de faire du sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sport parmi "Oui".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="IIQSVC">
+              <label>
+                <fr>Oui sans trop de problème</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="IZLACM">
+              <label>
+                <fr>Ce serait difficile</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="QOIQXV">
+              <label>
+                <fr>Je ne peux pas l'envisager</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1692714500" name="argument">
+          <label>
+            <fr>Quel argument ou situation pourrait vous inciter à faire du sport ?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>Une question "Si Autre, précisez" est associée à cette question.
+La question n'est pertinente que si sport parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <attributes otherprecise="1" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="ICFHNJ">
+              <label>
+                <fr>Un problème de santé</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="TIABSK">
+              <label>
+                <fr>Plus de temps</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="IQBUSQ">
+              <label>
+                <fr>Un accès plus facile aux équipements/cours</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="DBYNJF">
+              <label>
+                <fr>Autre</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OT" id="1626735636" name="argument_Autre" cordial="0">
+          <label>
+            <fr>Si 'Autre' précisez :</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sport parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <text nbcharline="0" nblines="1" />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+        </variable>
+        <variable type="FU" id="93991812" name="refairesport">
+          <label>
+            <fr>Envisagez-vous de refaire du sport à court terme?</fr>
+          </label>
+          <shortlabel />
+          <instruction isauto="1">
+            <fr>La question n'est pertinente que si sport parmi "Non".</fr>
+          </instruction>
+          <alert />
+          <restrictions>
+            <exp>
+              <v>sport</v>
+              <o>PARMI</o>
+              <op>0;0;1</op>
+            </exp>
+          </restrictions>
+          <modalities>
+            <m id="EMJZKG">
+              <label>
+                <fr>Oui</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="YYRMPF">
+              <label>
+                <fr>Non</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1815805263" name="reussite">
+          <label>
+            <fr>Le sport a une influence positive sur la réussite des étudiants. Face à cette affirmation, vous êtes</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <modalities>
+            <m id="HZPJXR">
+              <label>
+                <fr>Tout à fait d'accord</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="LOHMXU">
+              <label>
+                <fr>Moyennement d'accord</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="SKSCAV">
+              <label>
+                <fr>Pas vraiment d'accord</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+      </part>
+      <part id="1226281155" name="Variables de publication" isexpanded="0">
+        <label>
+          <fr>Variables de publication</fr>
+        </label>
+        <shortlabel />
+        <status system="1" hidden="1" />
+        <variable type="OC" id="219430505" name="CLE">
+          <label>
+            <fr>CLE</fr>
+          </label>
+          <shortlabel>
+            <fr>Clé</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique (clé primaire).</fr>
+          </instruction>
+          <alert />
+          <code nbcharcode="255" />
+          <status system="1" hidden="1" />
+          <varauto>Clé</varauto>
+        </variable>
+        <variable type="OD" id="1158723245" name="DATE_SAISIE">
+          <label>
+            <fr>DATE_SAISIE</fr>
+          </label>
+          <shortlabel>
+            <fr>Date de saisie</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique. "jj/mm/aaaa hh:mm:ss".</fr>
+          </instruction>
+          <alert />
+          <date format="jj/mm/aaaa hh:nn:ss" />
+          <status system="1" hidden="1" />
+          <varauto>DateSaisie</varauto>
+        </variable>
+        <variable type="OD" id="1186514914" name="DATE_ENREG">
+          <label>
+            <fr>DATE_ENREG</fr>
+          </label>
+          <shortlabel>
+            <fr>Date de dernier enregistrement</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique. "jj/mm/aaaa hh:mm:ss".</fr>
+          </instruction>
+          <alert />
+          <date format="jj/mm/aaaa hh:nn:ss" />
+          <status system="1" hidden="1" />
+          <varauto>DateEnreg</varauto>
+        </variable>
+        <variable type="OD" id="179275220" name="DATE_MODIF">
+          <label>
+            <fr>DATE_MODIF</fr>
+          </label>
+          <shortlabel>
+            <fr>Date de dernière modification</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique. "jj/mm/aaaa hh:mm:ss".</fr>
+          </instruction>
+          <alert />
+          <date format="jj/mm/aaaa hh:nn:ss" />
+          <status system="1" hidden="1" />
+          <varauto>DateModif</varauto>
+        </variable>
+        <variable type="ON" id="1882612710" name="TEMPS_SAISIE">
+          <label>
+            <fr>TEMPS_SAISIE</fr>
+          </label>
+          <shortlabel>
+            <fr>Temps de saisie</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique.</fr>
+          </instruction>
+          <alert />
+          <numeric type="2" nbdecimal="2">
+            <unit />
+          </numeric>
+          <status system="1" hidden="1" />
+          <varauto>TempsSaisie</varauto>
+        </variable>
+        <variable type="OC" id="1592476327" name="ORIGINE_SAISIE">
+          <label>
+            <fr>ORIGINE_SAISIE</fr>
+          </label>
+          <shortlabel>
+            <fr>Origine</fr>
+          </shortlabel>
+          <alert />
+          <code nbcharcode="255" />
+          <status system="1" hidden="1" />
+          <defaultvalue>Direct</defaultvalue>
+        </variable>
+        <variable type="OC" id="1331661489" name="LANG_SAISIE">
+          <label>
+            <fr>LANG_SAISIE</fr>
+          </label>
+          <shortlabel>
+            <fr>Langue</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique.</fr>
+          </instruction>
+          <alert />
+          <code nbcharcode="255" />
+          <status system="1" hidden="1" />
+          <varauto>LangueSaisie</varauto>
+        </variable>
+        <variable type="FU" id="1105403850" name="APPAREIL_SAISIE">
+          <label>
+            <fr>APPAREIL_SAISIE</fr>
+          </label>
+          <shortlabel>
+            <fr>Appareil utilisé pour la saisie</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique.</fr>
+          </instruction>
+          <alert />
+          <status system="1" hidden="1" />
+          <varauto>AppareilSaisie</varauto>
+          <modalities>
+            <m id="XUCXPY">
+              <label>
+                <fr>PC</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="PICEPN">
+              <label>
+                <fr>Tablette</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="HNWXZN">
+              <label>
+                <fr>Smartphone</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="FU" id="1993926446" name="PROGRESSION">
+          <label>
+            <fr>PROGRESSION</fr>
+          </label>
+          <shortlabel>
+            <fr>Progression</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique.</fr>
+          </instruction>
+          <alert />
+          <status system="1" hidden="1" />
+          <varauto>Progression</varauto>
+          <modalities>
+            <m id="PRKKSN">
+              <label>
+                <fr>En cours</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="UUAPOU">
+              <label>
+                <fr>Terminé</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="EWJQSY">
+              <label>
+                <fr>QuotaFull</fr>
+              </label>
+              <shortlabel />
+            </m>
+            <m id="ZTSIZH">
+              <label>
+                <fr>ScreenOut</fr>
+              </label>
+              <shortlabel />
+            </m>
+          </modalities>
+        </variable>
+        <variable type="OC" id="678896876" name="DERNIERE_QUESTION_SAISIE">
+          <label>
+            <fr>DERNIERE_QUESTION_SAISIE</fr>
+          </label>
+          <shortlabel>
+            <fr>Dernière question saisie</fr>
+          </shortlabel>
+          <instruction isauto="1">
+            <fr>La réponse est automatique.</fr>
+          </instruction>
+          <alert />
+          <code nbcharcode="255" />
+          <status system="1" hidden="1" />
+          <varauto>DerniereQuestionSaisie</varauto>
+        </variable>
+      </part>
+      <variable type="FU" id="1962297094" name="etudes_rassemblees">
+        <label />
+        <shortlabel />
+        <alert />
+        <modalities>
+          <m id="TGYEYC">
+            <label>
+              <fr>EnqueteSportEtudiant2024</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="EIBUGP">
+            <label>
+              <fr>EnqueteSportEtudiant2024_1</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="IVYPCY">
+            <label>
+              <fr>EnqueteSportEtudiant2024_2</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="NSUZMM">
+            <label>
+              <fr>EnqGroupe10</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="FAWNZL">
+            <label>
+              <fr>EnqGroupe11</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="PKLBUL">
+            <label>
+              <fr>EnqueteSportEtudiant2024_3</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="TEKSYU">
+            <label>
+              <fr>EnqueteSportEtudiant2024_4</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="XNKNQX">
+            <label>
+              <fr>EnqueteSportEtudiant2024_5</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="HMUYSO">
+            <label>
+              <fr>EnqueteSportEtudiant2024_6</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="YTTLYX">
+            <label>
+              <fr>EnqueteSportEtudiant2024_7</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="FQIQEV">
+            <label>
+              <fr>EnqueteSportEtudiant2024_8</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="DHANVY">
+            <label>
+              <fr>EnqueteSportEtudiant2024_9</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="NUUACZ">
+            <label>
+              <fr>EnqueteSportEtudiant2024_10</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="CSKZFN">
+            <label>
+              <fr>EnqueteSportEtudiant2024_11</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="RRSXCB">
+            <label>
+              <fr>EnqGroupe20</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="RIFNMH">
+            <label>
+              <fr>EnqueteSportEtudiant2024_12</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="LHIPJJ">
+            <label>
+              <fr>EnqueteGroupex22</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="WUQVLX">
+            <label>
+              <fr>EnqueteSportEtudiant2024_13</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="UYRUJG">
+            <label>
+              <fr>EnqGroupe4</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="NGLVYN">
+            <label>
+              <fr>EnqueteSportEtudiant2024_14</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="DGEZWN">
+            <label>
+              <fr>EnqueteSportEtudiant2024_15</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="SZIMOV">
+            <label>
+              <fr>EnqueteSportEtudiant2024_16</fr>
+            </label>
+            <shortlabel />
+          </m>
+          <m id="RNIACL">
+            <label>
+              <fr>EnqueteSportEtudiant2024_17</fr>
+            </label>
+            <shortlabel />
+          </m>
+        </modalities>
+      </variable>
+      <part id="1166915552" name="Variables systèmes" isexpanded="0">
+        <label>
+          <fr>Variables systèmes</fr>
+        </label>
+        <shortlabel />
+        <status system="1" hidden="1" />
+        <variable type="OT" id="6746443" name="deptgeo_Autre_LC" cordial="1">
+          <label>
+            <fr>deptgeo_Autre : Texte lemmatisé</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <options>
+            <var_text_id>85142256</var_text_id>
+          </options>
+          <status system="1" hidden="1" />
+        </variable>
+        <variable type="OT" id="782713663" name="raisonnonsuaps_Autre_LC" cordial="1">
+          <label>
+            <fr>raisonnonsuaps_Autre : Texte lemmatisé</fr>
+          </label>
+          <shortlabel />
+          <alert />
+          <options>
+            <var_text_id>104986475</var_text_id>
+          </options>
+          <status system="1" hidden="1" />
+        </variable>
+      </part>
+    </items>
+    <restrictions lastid="2033985177">
+      <restriction type="restriction" items="i1910881244" id="865018283" nosave="0">
+        <exp>
+          <v>alternant</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1977398967" id="1949803763" nosave="0">
+        <exp>
+          <v>alternant</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i773500450" id="915844609" nosave="0">
+        <exp>
+          <v>sport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i457297885" id="1184111419" nosave="0">
+        <exp>
+          <v>sport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i777894771" id="786253143" nosave="0">
+        <exp>
+          <v>sportavant</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1707979975" id="1696038776" nosave="0">
+        <exp>
+          <v>sportavant</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1009881424" id="192120512" nosave="0">
+        <exp>
+          <v>sportavant</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1463215038" id="1554681456" nosave="0">
+        <exp>
+          <v>sportavant</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1176619774" id="174318114" nosave="0">
+        <exp>
+          <v>sport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i648354709" id="850134005" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1393790641" id="1017065881" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1655348329" id="880679515" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i606542041" id="1917984185" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i140401905" id="1636303375" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i2034988927" id="227550126" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i463812251" id="877896224" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i662259114" id="1776913610" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1748758644" id="137898434" nosave="0">
+        <exp>
+          <v>cadresport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1692714500;i93991812" id="2033985176" nosave="0">
+        <exp>
+          <v>sport</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i405006424" id="1851633415" nosave="0">
+        <exp>
+          <v>satisfsuaps</v>
+          <o>PARMI</o>
+          <op>0;0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i730573318" id="585017392" nosave="0">
+        <exp>
+          <v>sport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+      <restriction type="restriction" items="i1527721258" id="323547878" nosave="0">
+        <exp>
+          <v>sport</v>
+          <o>PARMI</o>
+          <op>0;1</op>
+        </exp>
+      </restriction>
+    </restrictions>
+    <options resetnonconcerned="0">
+      <active groups="1" jumps="1" controls="1" />
+    </options>
+  </questionnaire>
+  <modules>
+    <product company="" username="UNIVERSITE DE POITIERS" k="1" />
+    <publish />
+    <modalitiesrestriction />
+    <groupinstructions />
+    <verbatims_infos />
+    <compute_infos />
+    <qextension />
+    <samples />
+    <cs>pQZ+yr528d1hOegJwhhgHytDjafcoHww</cs>
+    <assembly>8.7.2</assembly>
+    <docking>
+      <qeditor leftwidth="275" rightwidth="294" />
+      <table leftwidth="250" rightwidth="325" />
+      <dataviv leftwidth="250" rightwidth="325" />
+    </docking>
+    <qeditor issimplelist="1" />
+    <table readonly="1">
+      <items itemsettype="0">
+        <checked>85142256;93991812;104986475;140401905;198262280;219430505;294407225;400071104;405006424;451260924;457297885;463812251;515661102;606542041;626541665;648354709;662259114;730573318;773500450;777894771;1009881424;1059955867;1158723245;1165714199;1176619774;1243672546;1274751448;1307793945;1393790641;1463215038;1468185353;1498844266;1527721258;1561044438;1626735636;1655348329;1665187591;1692714500;1707979975;1728404030;1748758644;1815805263;1900164033;1910881244;1943393324;1962297094;1977398967;2034988927;2051643862;2096077477</checked>
+      </items>
+      <options>
+        <close>TEXT</close>
+        <multiple>MULTIPLE_ONECOLUMN</multiple>
+        <textlines>1</textlines>
+        <header>NAME</header>
+      </options>
+      <variables>
+        <variable id="1165714199">
+          <column width="70" />
+        </variable>
+        <variable id="1059955867">
+          <column width="70" />
+        </variable>
+        <variable id="85142256">
+          <column width="280" />
+        </variable>
+        <variable id="1274751448">
+          <column width="70" />
+        </variable>
+        <variable id="1243672546">
+          <column width="70" />
+        </variable>
+        <variable id="294407225">
+          <column width="70" />
+        </variable>
+        <variable id="2096077477">
+          <column width="70" />
+        </variable>
+        <variable id="1910881244">
+          <column width="70" />
+        </variable>
+        <variable id="1977398967">
+          <column width="70" />
+        </variable>
+        <variable id="515661102">
+          <column width="70" />
+        </variable>
+        <variable id="451260924">
+          <column width="280" />
+        </variable>
+        <variable id="1943393324">
+          <column width="70" />
+        </variable>
+        <variable id="1307793945">
+          <column width="70" />
+        </variable>
+        <variable id="1900164033">
+          <column width="70" />
+        </variable>
+        <variable id="1468185353">
+          <column width="70" />
+        </variable>
+        <variable id="1498844266">
+          <column width="70" />
+        </variable>
+        <variable id="773500450">
+          <column width="70" />
+        </variable>
+        <variable id="104986475">
+          <column width="280" />
+        </variable>
+        <variable id="457297885">
+          <column width="70" />
+        </variable>
+        <variable id="777894771">
+          <column width="70" />
+        </variable>
+        <variable id="2051643862">
+          <column width="280" />
+        </variable>
+        <variable id="1707979975">
+          <column width="70" />
+        </variable>
+        <variable id="1728404030">
+          <column width="280" />
+        </variable>
+        <variable id="1009881424">
+          <column width="70" />
+        </variable>
+        <variable id="1463215038">
+          <column width="70" />
+        </variable>
+        <variable id="626541665">
+          <column width="280" />
+        </variable>
+        <variable id="1176619774">
+          <column width="70" />
+        </variable>
+        <variable id="648354709">
+          <column width="70" />
+        </variable>
+        <variable id="1393790641">
+          <column width="70" />
+        </variable>
+        <variable id="1655348329">
+          <column width="70" />
+        </variable>
+        <variable id="606542041">
+          <column width="70" />
+        </variable>
+        <variable id="405006424">
+          <column width="70" />
+        </variable>
+        <variable id="400071104">
+          <column width="280" />
+        </variable>
+        <variable id="140401905">
+          <column width="70" />
+        </variable>
+        <variable id="198262280">
+          <column width="280" />
+        </variable>
+        <variable id="2034988927">
+          <column width="70" />
+        </variable>
+        <variable id="1665187591">
+          <column width="280" />
+        </variable>
+        <variable id="463812251">
+          <column width="70" />
+        </variable>
+        <variable id="662259114">
+          <column width="70" />
+        </variable>
+        <variable id="1748758644">
+          <column width="70" />
+        </variable>
+        <variable id="730573318">
+          <column width="70" />
+        </variable>
+        <variable id="1561044438">
+          <column width="280" />
+        </variable>
+        <variable id="1527721258">
+          <column width="70" />
+        </variable>
+        <variable id="1692714500">
+          <column width="70" />
+        </variable>
+        <variable id="1626735636">
+          <column width="280" />
+        </variable>
+        <variable id="93991812">
+          <column width="70" />
+        </variable>
+        <variable id="1815805263">
+          <column width="70" />
+        </variable>
+        <variable id="219430505">
+          <column width="70" />
+        </variable>
+        <variable id="1158723245">
+          <column width="140" />
+        </variable>
+        <variable id="1186514914">
+          <column width="140" />
+        </variable>
+        <variable id="179275220">
+          <column width="140" />
+        </variable>
+        <variable id="1882612710">
+          <column width="70" />
+        </variable>
+        <variable id="1592476327">
+          <column width="70" />
+        </variable>
+        <variable id="1331661489">
+          <column width="70" />
+        </variable>
+        <variable id="1105403850">
+          <column width="70" />
+        </variable>
+        <variable id="1993926446">
+          <column width="70" />
+        </variable>
+        <variable id="678896876">
+          <column width="70" />
+        </variable>
+        <variable id="1962297094">
+          <column width="70" />
+        </variable>
+      </variables>
+      <sorts />
+      <filters />
+      <colors />
+    </table>
+    <synchronization>
+      <url />
+      <account />
+      <surveyname />
+      <lastDateSync />
+    </synchronization>
+  </modules>
+  <samples />
+  <varsets />
+  <skins j="1" default="1602117336">
+    <skin id="1602117336" name="Default" predefined="Default" vertical_interline="30" horizontal_interline="6">
+      <pagemodel template="theme_backcolor_formcolor_navigation">
+        <field name="pagemodel_theme" type="IMAGE"></field>
+        <field name="pagemodel_background" type="COLOR">#FFFFFFFF</field>
+        <field name="pagemodel_form_background" type="COLOR">#1AFFFFFF</field>
+        <field name="pagemodel_header_image" type="IMAGE"></field>
+        <field name="pagemodel_footer_image" type="IMAGE"></field>
+        <field name="pagemodel_logo" type="IMAGE"></field>
+        <field name="pagemodel_logo_scale" type="SCALE">50</field>
+        <field name="pagemodel_logo_right" type="IMAGE"></field>
+        <field name="pagemodel_logo_right_scale" type="SCALE">50</field>
+        <field name="pagemodel_title_text" type="TITLE_TEXT" />
+        <field name="pagemodel_title_style" type="TEXT_STYLE">Arial;18;GRAS;CENTER;#FF604A7B;#00FFFFFF</field>
+        <field name="pagemodel_themecustom" type="IMAGE">galets-roses.png</field>
+        <field name="pagemodel_themecustom_placement" type="EPLACEMENT">UNIFORMTOFILL</field>
+        <field name="pagemodel_form_shadow" type="BOOLEAN">False</field>
+        <field name="pagemodel_form_border" type="BOOLEAN">False</field>
+      </pagemodel>
+      <style>
+        <form>
+          <page do="1">
+            <content text="0" commentary="0" />
+            <fontlabel name="Verdana" size="10" style="NORMAL" align="LEFT" color="#FF000000" bkcolor="" />
+            <fontconsigne name="Verdana" size="10" style="NORMAL" align="LEFT" color="#FF000000" bkcolor="" />
+            <border style="NONE" size="1" color="#FFC0C0C0" />
+          </page>
+          <fvariable do="1" vrowpadding="1" graphpos="BOTTOM_TITLE" columntype="MODALITIES" locked="0" shadow="0" isrowrandom="0">
+            <content title="1" label="1" variable="0" number="0" input="1" media="0" text="0" commentarypos="BOTTOM_TITLE" />
+            <media position="LEFT" backstyle="CENTER" opacity="100" isfixedwidth="0"></media>
+            <size isfixedwidth="0" width="5.29166666666667" />
+            <fontlabel name="Arial" size="14" style="GRAS" align="LEFT" color="#FF64255A" bkcolor="" />
+            <fontinput name="Arial" size="13" style="NORMAL" align="LEFT" color="#FF404040" bkcolor="" bkcolor2="#FFF2F2F2" />
+            <fontresponse name="Arial" size="13" style="GRAS" align="LEFT" color="#FF604A7B" bkcolor="" />
+            <fontconsigne name="Arial" size="14" style="NORMAL" align="LEFT" color="#FF404040" bkcolor="" />
+            <border style="NONE" size="1" color="#FFC0C0C0" />
+            <f type="BUTTON" itemsnumbering="0" columnsnb="1" itemlayout="COLUMN" itemscheck="1" draganddropmode="0" itemstext="RIGHT" itemssize="14" itemszoom="0" itemsfgcolor="#FF000000" itemsbgcolor="#FFFFFFFF" itemsgrouplayout="#FF000000" usedynmodalities="1" ratingmode="STAR16" scaleblockcolor="13270825">
+              <postit colors="#FFC7D759;#FFF9E068;#FFF98D81;#FFE69ABD;#FFA8C8DC;#FFEEAC73" />
+              <checkbox color="#FF64255A" bgcolor="#FFFFFFFF" size="24" />
+              <button colors="#FFFFFFFF" padding="14" borderColor="#FF64255A" borderSize="1" borderCornerRadius="3" checkColor="#FF64255A" checkTextColor="#FFFFFFFF" showCheckIcon="1" />
+              <choicechips colors="#FFFFFFFF" padding="10" borderColor="#FF64255A" borderSize="1" borderCornerRadius="20" checkColor="#FF64255A" checkTextColor="#FFFFFFFF" showCheckIcon="1" />
+              <scaleblock colors="#FFF7F7F7" selection="Fill" selColor="#FF297FCA" corner="5" padding="8" align="LEFT" showselectedlabel="0" />
+              <scalecolors colors="#FFEA5950;#FFF39450;#FFFCE150;#FF92D050;#FF58AF50" selection="Underline" corner="5" padding="8" align="LEFT" showselectedlabel="0" />
+              <scaledynamic colors="#FFEA5950;#FFF39450;#FFFCE150;#FF92D050;#FF58AF50" selection="Dynamic" corner="5" padding="8" align="LEFT" showselectedlabel="0" />
+              <scale orientation="HORIZONTAL" graduation="0" names="0" fixedsize="0" size="5" color="#FFF6F6F6" selColor="#FF9DA7A7" height="9" borderthickness="0" align="LEFT" showselectedlabel="0" />
+              <fillicon shape="star" color="#FF0143AC" size="18" />
+              <picto bordercolor="#FF64255A" />
+            </f>
+            <s type="SCALE_BLOCK" itemsnumbering="0" columnsnb="1" itemlayout="COLUMN" itemscheck="1" draganddropmode="0" itemstext="BOTTOM" itemssize="12" itemszoom="0" itemsfgcolor="#FF000000" itemsbgcolor="#FFFFFFFF" itemsgrouplayout="#FF000000" usedynmodalities="1" ratingmode="STAR64" scaleblockcolor="5907812">
+              <postit colors="#FFC7D759;#FFF9E068;#FFF98D81;#FFE69ABD;#FFA8C8DC;#FFEEAC73" />
+              <checkbox color="#FF64255A" bgcolor="#FFFFFFFF" size="24" />
+              <button colors="#FFFFFFFF" padding="14" borderColor="#FF64255A" borderSize="1" borderCornerRadius="3" checkColor="#FF64255A" checkTextColor="#FFFFFFFF" showCheckIcon="1" />
+              <choicechips colors="#FFFFFFFF" padding="4" borderColor="#FFD9D9D9" borderSize="1" borderCornerRadius="16" checkColor="#FFE5E5E5" checkTextColor="#FF000000" showCheckIcon="0" />
+              <scaleblock colors="#1A64255A" selection="Fill" selColor="#FF64255A" corner="3" padding="14" align="JUSTIFY" showselectedlabel="0" />
+              <scalecolors colors="#FFFF0D0D;#FFFF4E11;#FFFF8E15;#FFFAB733;#FFACB334;#FF69B34C" selection="Underline" corner="3" padding="14" align="JUSTIFY" showselectedlabel="0" />
+              <scaledynamic colors="#FFFF0D0D;#FFFF4E11;#FFFF8E15;#FFFAB733;#FFACB334;#FF69B34C" selection="Dynamic" corner="3" padding="14" align="JUSTIFY" showselectedlabel="0" />
+              <scale orientation="HORIZONTAL" graduation="1" names="1" fixedsize="0" size="5" color="#1A64255A" selColor="#FF64255A" height="14" borderthickness="0" align="LEFT" showselectedlabel="1" />
+              <fillicon shape="star" color="#FF64255A" size="48" />
+              <picto bordercolor="#FF64255A" />
+            </s>
+            <o text="LINES" textnbline="3" focusColor="#FF64255A" ocr="0" codelist="1" useunit="0" hidespinbuttons="0">
+              <numericslider color="#1A64255A" selColor="#FF64255A" />
+              <d usecalendar="1" />
+            </o>
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fgroup do="1" group="1" vrowpadding="1" graphpos="BOTTOM_TITLE" columntype="MODALITIES" locked="0" shadow="0" isrowrandom="0">
+            <content title="1" label="1" variable="0" number="0" input="1" media="0" text="0" commentarypos="BOTTOM_TITLE" />
+            <media position="LEFT" backstyle="CENTER" opacity="100" isfixedwidth="0"></media>
+            <size isfixedwidth="0" width="5.29166666666667" />
+            <fontlabel name="Arial" size="14" style="GRAS" align="LEFT" color="#FF64255A" bkcolor="" />
+            <fontinput name="Arial" size="13" style="NORMAL" align="CENTER" color="#FF404040" bkcolor="" bkcolor2="#B2E6E0EC" />
+            <fontresponse name="Arial" size="13" style="GRAS" align="LEFT" color="#FF403152" bkcolor="" />
+            <fontconsigne name="Arial" size="14" style="NORMAL" align="LEFT" color="#FF403152" bkcolor="" />
+            <border style="NONE" size="1" color="#FFC0C0C0" />
+            <f type="BUTTON" itemsnumbering="0" columnsnb="1" itemlayout="COLUMN" itemscheck="1" draganddropmode="0" itemstext="RIGHT" itemssize="14" itemszoom="0" itemsfgcolor="#FF000000" itemsbgcolor="#FFFFFFFF" itemsgrouplayout="#FF000000" usedynmodalities="1" ratingmode="STAR16" scaleblockcolor="13270825">
+              <postit colors="#FFC7D759;#FFF9E068;#FFF98D81;#FFE69ABD;#FFA8C8DC;#FFEEAC73" />
+              <checkbox color="#FF64255A" bgcolor="#FFFFFFFF" size="24" />
+              <button colors="#FFFFFFFF" padding="14" borderColor="#FF64255A" borderSize="1" borderCornerRadius="3" checkColor="#FF64255A" checkTextColor="#FFFFFFFF" showCheckIcon="1" />
+              <choicechips colors="#FFFFFFFF" padding="10" borderColor="#FF64255A" borderSize="1" borderCornerRadius="20" checkColor="#FF64255A" checkTextColor="#FFFFFFFF" showCheckIcon="1" />
+              <scaleblock colors="#FFF7F7F7" selection="Fill" selColor="#FF297FCA" corner="5" padding="8" align="LEFT" showselectedlabel="0" />
+              <scalecolors colors="#FFEA5950;#FFF39450;#FFFCE150;#FF92D050;#FF58AF50" selection="Underline" corner="5" padding="8" align="LEFT" showselectedlabel="0" />
+              <scaledynamic colors="#FFEA5950;#FFF39450;#FFFCE150;#FF92D050;#FF58AF50" selection="Dynamic" corner="5" padding="8" align="LEFT" showselectedlabel="0" />
+              <scale orientation="HORIZONTAL" graduation="0" names="0" fixedsize="0" size="5" color="#FFF6F6F6" selColor="#FF9DA7A7" height="9" borderthickness="0" align="LEFT" showselectedlabel="0" />
+              <fillicon shape="star" color="#FF0143AC" size="18" />
+              <picto bordercolor="#FF64255A" />
+            </f>
+            <s type="SCALE_BLOCK" itemsnumbering="0" columnsnb="1" itemlayout="COLUMN" itemscheck="1" draganddropmode="0" itemstext="BOTTOM" itemssize="12" itemszoom="0" itemsfgcolor="#FF000000" itemsbgcolor="#FFFFFFFF" itemsgrouplayout="#FF000000" usedynmodalities="1" ratingmode="STAR64" scaleblockcolor="5907812">
+              <postit colors="#FFC7D759;#FFF9E068;#FFF98D81;#FFE69ABD;#FFA8C8DC;#FFEEAC73" />
+              <checkbox color="#FF64255A" bgcolor="#FFFFFFFF" size="24" />
+              <button colors="#FFFFFFFF" padding="14" borderColor="#FF64255A" borderSize="1" borderCornerRadius="3" checkColor="#FF64255A" checkTextColor="#FFFFFFFF" showCheckIcon="1" />
+              <choicechips colors="#FFFFFFFF" padding="4" borderColor="#FFD9D9D9" borderSize="1" borderCornerRadius="16" checkColor="#FFE5E5E5" checkTextColor="#FF000000" showCheckIcon="0" />
+              <scaleblock colors="#1A64255A" selection="Fill" selColor="#FF64255A" corner="3" padding="14" align="JUSTIFY" showselectedlabel="0" />
+              <scalecolors colors="#FFFF0D0D;#FFFF4E11;#FFFF8E15;#FFFAB733;#FFACB334;#FF69B34C" selection="Underline" corner="3" padding="14" align="JUSTIFY" showselectedlabel="0" />
+              <scaledynamic colors="#FFFF0D0D;#FFFF4E11;#FFFF8E15;#FFFAB733;#FFACB334;#FF69B34C" selection="Dynamic" corner="3" padding="14" align="JUSTIFY" showselectedlabel="0" />
+              <scale orientation="HORIZONTAL" graduation="1" names="1" fixedsize="0" size="5" color="#1A64255A" selColor="#FF64255A" height="14" borderthickness="0" align="LEFT" showselectedlabel="1" />
+              <fillicon shape="star" color="#FF64255A" size="48" />
+              <picto bordercolor="#FF64255A" />
+            </s>
+            <o text="LINES" textnbline="3" focusColor="#FF64255A" ocr="0" codelist="1" useunit="0" hidespinbuttons="0">
+              <numericslider color="#1A64255A" selColor="#FF64255A" />
+              <d usecalendar="1" />
+            </o>
+            <placeholderoptions type="Default" />
+          </fgroup>
+          <caption do="1" linkstyle="0">
+            <font name="Arial" size="13" style="NORMAL" align="LEFT" color="#FF000000" bkcolor="" />
+            <border style="NONE" size="1" color="#FF000000" />
+          </caption>
+          <media do="1" align="CENTER" proportional="0">
+            <border style="NONE" size="1" color="#FFC0C0C0" />
+          </media>
+          <button do="1" linkstyle="0">
+            <font name="Arial" size="13" style="NORMAL" align="CENTER" color="#FFFFFFFF" bkcolor="#FF64255A" />
+            <border style="NONE" size="1" color="#FF000000" />
+          </button>
+          <parts>
+            <part do="1">
+              <content text="1" commentary="0" />
+              <fontlabel name="Arial" size="20" style="NORMAL" align="LEFT" color="#FF604A7B" bkcolor="#FFF2F2F2" />
+              <fontconsigne name="Arial" size="14" style="NORMAL" align="LEFT" color="#FF404040" bkcolor="" />
+              <border style="NONE" size="2" color="#FF001C50" />
+            </part>
+            <part do="1">
+              <content text="1" commentary="0" />
+              <fontlabel name="Verdana" size="14" style="GRAS" align="LEFT" color="#FFFFFFFF" bkcolor="#FF446EA2" />
+              <fontconsigne name="Calibri" size="10" style="GRAS, ITALIQUE" align="LEFT" color="#FF3F3F3F" bkcolor="" />
+              <border style="NONE" size="1" color="#FF093367" />
+            </part>
+            <part do="1">
+              <content text="1" commentary="0" />
+              <fontlabel name="Verdana" size="12" style="GRAS" align="LEFT" color="#FF7F7F7F" bkcolor="" />
+              <fontconsigne name="Calibri" size="10" style="GRAS, ITALIQUE" align="LEFT" color="#FF3F3F3F" bkcolor="" />
+              <border style="NONE" size="6" color="#FF000000" />
+            </part>
+          </parts>
+        </form>
+      </style>
+    </skin>
+  </skins>
+  <forms j="1" current="0">
+    <form id="475712329">
+      <name>
+        <fr>Formulaire par défaut</fr>
+      </name>
+      <pagesize width="1024" height="768" typeform="WEB" papersize="SCREEN_1024_PAPER" orientation="DMORIENT_PORTRAIT" />
+      <viewport left="5" top="80" right="5" bottom="40" />
+      <skin id="1602117336" />
+      <options confirmsave="0" aftersave="STOP" showtimer="0" nextauto="0" pagetransitioneffect="NONE" customnavbar="1" responsivedesign="1" dynamicfooter="1" smartphone_form_allowed="0" disablepreviousbutton="0" numerotation="NONE" sequentialmode="0" />
+      <items>
+        <progressbar id="394783310" ismasked="1" pagenumber="1" top="733" left="412" width="200" height="30" hidden="0" template="MOD3">
+          <caption do="1" />
+        </progressbar>
+        <button id="88034201" ismasked="1" pagenumber="1" top="733" left="257" width="150" height="30" hidden="0">
+          <text textauto="1" />
+          <template category="IMAGETEXT" template="MOD1" />
+          <action action="PREV" />
+          <caption do="1" />
+        </button>
+        <button id="789567400" ismasked="1" pagenumber="1" top="733" left="617" width="150" height="30" hidden="0">
+          <text textauto="1" />
+          <template category="IMAGETEXT" template="MOD1" />
+          <action action="NEXT_FINISH" />
+          <caption do="1" />
+        </button>
+        <item id="1111795275" ismasked="0" pagenumber="1" top="80" left="5" width="1014" height="67" hidden="0" itemid="399887493">
+          <part do="1" />
+        </item>
+        <item id="1878777413" ismasked="0" pagenumber="1" top="214" left="5" width="1014" height="118" hidden="0" itemid="1165714199">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <f type="CHECKBOX" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="569376434" ismasked="0" pagenumber="1" top="332" left="5" width="1014" height="284" hidden="0" opheight="46" itemid="1059955867">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <f type="CHECKBOX" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="2144409278" ismasked="0" pagenumber="2" top="80" left="5" width="1014" height="224" hidden="0" itemid="1274751448">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1267526631" ismasked="0" pagenumber="2" top="304" left="5" width="1014" height="278" hidden="0" itemid="1243672546">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1803090160" ismasked="0" pagenumber="3" top="80" left="5" width="1014" height="170" hidden="0" itemid="294407225">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="48848482" ismasked="0" pagenumber="3" top="250" left="5" width="1014" height="198" hidden="0" itemid="2096077477">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="740414945" ismasked="0" pagenumber="3" top="448" left="5" width="1014" height="198" hidden="0" itemid="1910881244">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="219401386" ismasked="0" pagenumber="4" top="80" left="5" width="1014" height="198" hidden="0" itemid="1977398967">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1365554743" ismasked="0" pagenumber="4" top="286" left="5" width="1014" height="256" hidden="0" opheight="32" itemid="515661102">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1942673544" ismasked="0" pagenumber="5" top="95" left="5" width="1014" height="170" hidden="0" itemid="1307793945">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1173450967" ismasked="0" pagenumber="5" top="265" left="5" width="1014" height="170" hidden="0" itemid="1900164033">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1344277649" ismasked="0" pagenumber="5" top="442" left="5" width="1014" height="170" hidden="0" opheight="32" itemid="1468185353">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1888336229" ismasked="0" pagenumber="6" top="109" left="5" width="1014" height="67" hidden="0" itemid="1117762624">
+          <part do="1" />
+        </item>
+        <item id="1387423767" ismasked="0" pagenumber="4" top="558" left="5" width="1014" height="170" hidden="0" itemid="1943393324">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1198419880" ismasked="0" pagenumber="6" top="176" left="5" width="1014" height="170" hidden="0" itemid="1498844266">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1536158828" ismasked="0" pagenumber="6" top="346" left="5" width="1014" height="359" hidden="0" opheight="32" itemid="773500450">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="202217759" ismasked="0" pagenumber="7" top="80" left="5" width="1014" height="198" hidden="0" itemid="457297885">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="599561676" ismasked="0" pagenumber="8" top="80" left="5" width="1014" height="648" hidden="0" opheight="32" itemid="777894771">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1618743849" ismasked="0" pagenumber="9" top="80" left="5" width="1014" height="413" hidden="0" opheight="32" itemid="1707979975">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1072346577" ismasked="0" pagenumber="9" top="493" left="5" width="1014" height="198" hidden="0" itemid="1009881424">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1726885308" ismasked="0" pagenumber="10" top="80" left="5" width="1014" height="413" hidden="0" opheight="32" itemid="1463215038">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1703310543" ismasked="0" pagenumber="10" top="493" left="5" width="1014" height="219" hidden="0" itemid="1176619774">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="418949699" ismasked="0" pagenumber="11" top="80" left="5" width="1014" height="489" hidden="0" itemid="648354709">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1799725029" ismasked="0" pagenumber="12" top="80" left="5" width="1014" height="252" hidden="0" itemid="1393790641">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="223869962" ismasked="0" pagenumber="12" top="332" left="5" width="1014" height="198" hidden="0" itemid="1655348329">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1509404891" ismasked="0" pagenumber="12" top="530" left="5" width="1014" height="198" hidden="0" itemid="606542041">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="60706656" ismasked="0" pagenumber="14" top="80" left="5" width="1014" height="327" hidden="0" opheight="32" itemid="140401905">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="953307675" ismasked="0" pagenumber="15" top="80" left="5" width="1014" height="648" hidden="0" opheight="32" itemid="2034988927">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="2060349610" ismasked="0" pagenumber="16" top="80" left="5" width="1014" height="219" hidden="0" itemid="463812251">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1566707382" ismasked="0" pagenumber="16" top="299" left="5" width="1014" height="306" hidden="0" itemid="662259114">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1043734780" ismasked="0" pagenumber="17" top="80" left="5" width="1014" height="198" hidden="0" itemid="1748758644">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="179434397" ismasked="0" pagenumber="17" top="283" left="5" width="1014" height="67" hidden="0" itemid="1811206599">
+          <part do="1" />
+        </item>
+        <item id="1586483403" ismasked="0" pagenumber="19" top="332" left="5" width="1014" height="359" hidden="0" opheight="32" itemid="1692714500">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1356419176" ismasked="0" pagenumber="20" top="80" left="5" width="1014" height="198" hidden="0" itemid="93991812">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1368494086" ismasked="0" pagenumber="20" top="278" left="5" width="1014" height="224" hidden="0" itemid="1815805263">
+          <fvariable do="1" locked="0">
+            <content title="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="1135952317" ismasked="0" pagenumber="13" top="80" left="5" width="1014" height="381" hidden="0" opheight="32" itemid="405006424">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="210153140" ismasked="0" pagenumber="17" top="350" left="5" width="1014" height="359" hidden="0" opheight="32" itemid="730573318">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <o textnbline="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+        <item id="498925275" ismasked="0" pagenumber="18" top="80" left="5" width="1014" height="252" hidden="0" itemid="1527721258">
+          <fvariable do="1" locked="0">
+            <content title="1" text="1" />
+            <placeholderoptions type="Default" />
+          </fvariable>
+          <fvariable sphdo="1" modnocontrols="0" documentsnodel="0" />
+        </item>
+      </items>
+      <pages>
+        <page id="2065838072">
+          <description />
+        </page>
+        <page id="1956410195">
+          <description />
+        </page>
+        <page id="1211292684">
+          <description />
+        </page>
+        <page id="1042020974">
+          <description />
+        </page>
+        <page id="96171766">
+          <description />
+        </page>
+        <page id="1556082054">
+          <description />
+        </page>
+        <page id="45765400">
+          <description />
+        </page>
+        <page id="82672651">
+          <description />
+        </page>
+        <page id="1462461799">
+          <description />
+        </page>
+        <page id="1687442292">
+          <description />
+        </page>
+        <page id="1528545578">
+          <description />
+        </page>
+        <page id="1809537247">
+          <description />
+        </page>
+        <page id="1923453303">
+          <description />
+        </page>
+        <page id="532549853">
+          <description />
+        </page>
+        <page id="1911102673">
+          <description />
+        </page>
+        <page id="1600113218">
+          <description />
+        </page>
+        <page id="1877325748">
+          <description />
+        </page>
+        <page id="1284540960">
+          <description />
+        </page>
+        <page id="830199268">
+          <description />
+        </page>
+        <page id="1687800046">
+          <description />
+        </page>
+      </pages>
+      <scanner />
+    </form>
+  </forms>
+  <boards j="1" />
+  <notes lastid="1" />
+  <eureka version="5.1.0.4">
+    <id>KBMIXSVZWLGKOMBP</id>
+    <compatible>3</compatible>
+    <publish>
+      <forbidden system="1">access;autosave;calculate;clone;consult;createshortcut;consultkey;debug;deleterecord;deleterecords;download;editlegend;execute;exist;exist2;flush;gettranslations;home;input;lock;makepdf;modify;page;pageget;pagepost;panel;quotas;recalculate;recorder;report;reports;save;saveget;savepost;settranslations;table;unlock</forbidden>
+      <cryptonly>2</cryptonly>
+    </publish>
+    <decimals></decimals>
+  </eureka>
+</sphinx>
