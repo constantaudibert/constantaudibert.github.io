@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <!-- Character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO: Title, description, and keywords for search engines -->
-    <!-- REPLACE [Votre Nom] with your full name -->
     <meta name="description" content="Étudiant en BUT Science des données. Apprennez en plus sur moi, découvrez mes projets réalisé dans le cadre universitaire">
-    <title> - Portfolio Constant AUDIBERT</title>
+    <title>Portfolio - Constant AUDIBERT</title>
     
     <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,226 +17,263 @@
     
     <!-- Custom CSS for minimalistic styling -->
     <style>
-        body {
-            font-family: 'Inter', sans-serif; /* Modern, professional font */
-            background-color: #F9FAFB; /* Light gray background */
-        }
-        nav {
-            padding: 0.5rem; /* Slim navbar */
-        }
-        .project-card {
-            transition: box-shadow 0.3s ease; /* Subtle hover effect */
-        }
-        .project-card:hover {
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on hover */
-        }
+      body {
+        font-family: 'Inter', sans-serif; /* Modern, professional font */
+        background-color: #F9FAFB; /* Light gray background */
+      }
+      nav {
+        padding: 0.5rem; /* Slim navbar */
+      }
+      .project-card {
+        transition: box-shadow 0.3s ease; /* Subtle hover effect */
+      }
+      .project-card:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+      }
     </style>
     
     <!-- Google Fonts: Inter for professional typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Favicon: REPLACE [URL-to-your-favicon.ico] with your favicon URL -->
-    <!-- Create a favicon at favicon.io or use an image (16x16 or 32x32) -->
+    <!-- Favicon -->
     <link rel="icon" href="photo.jpg" type="image/x-icon">
-</head>
-<body class="bg-gray-100 text-gray-800">
+  </head>
+  <body class="bg-gray-100 text-gray-800">
     <!-- Navbar -->
     <nav class="bg-white shadow-sm fixed w-full top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-12">
-                <!-- REPLACE [Votre Nom] with your full name -->
-                <span class="text-xl font-bold text-indigo-600">Constant AUDIBERT</span>
-                <div class="hidden md:flex space-x-4">
-                    <a href="#home" class="text-gray-700 hover:text-indigo-600">Accueil</a>
-                    <a href="#apropos" class="text-gray-700 hover:text-indigo-600">À propos</a>
-                    <a href="#projets" class="text-gray-700 hover:text-indigo-600">Projets</a>
-                    <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
-                </div>
-                <!-- Mobile menu button -->
-                <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-indigo-600">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-            <!-- Mobile menu (hidden by default) -->
-            <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#home" class="block text-gray-700 hover:text-indigo-600">Accueil</a>
-                    <a href="#apropos" class="block text-gray-700 hover:text-indigo-600">À propos</a>
-                    <a href="#projets" class="block text-gray-700 hover:text-indigo-600">Projets</a>
-                    <a href="#contact" class="block text-gray-700 hover:text-indigo-600">Contact</a>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-12">
+          <span class="text-xl font-bold text-indigo-600">Constant AUDIBERT</span>
+          <div class="hidden md:flex space-x-4">
+            <a href="#home" class="text-gray-700 hover:text-indigo-600">Accueil</a>
+            <a href="#apropos" class="text-gray-700 hover:text-indigo-600">À propos</a>
+            <a href="#projets" class="text-gray-700 hover:text-indigo-600">Projets</a>
+            <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+          </div>
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-indigo-600">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
         </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#home" class="block text-gray-700 hover:text-indigo-600">Accueil</a>
+            <a href="#apropos" class="block text-gray-700 hover:text-indigo-600">À propos</a>
+            <a href="#projets" class="block text-gray-700 hover:text-indigo-600">Projets</a>
+            <a href="#contact" class="block text-gray-700 hover:text-indigo-600">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <main class="pt-16">
-        <!-- Home Section -->
-        <section id="home" class="py-12">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <!-- REPLACE [Votre Nom] with your full name -->
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">Bienvenue sur mon <span class="text-indigo-600">Portfolio</span></h1>
-                <p class="text-xl text-gray-600 mb-8">Étudiant en BUT Science des données. Apprennez en plus sur moi, découvrez mes projets réalisé dans le cadre universitaire</p>
-                <!-- REPLACE [URL-to-your-project-image] with the URL of a project screenshot -->
-                <!-- Upload your image to Imgbb (imgbb.com) or GitHub and copy the URL -->
+      <!-- Home Section -->
+      <section id="home" class="py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">Bienvenue sur mon <span class="text-indigo-600">Portfolio</span></h1>
+          <p class="text-xl text-gray-600 mb-8">Étudiant en BUT Science des données. Apprennez en plus sur moi, découvrez mes projets réalisé dans le cadre universitaire</p>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="apropos" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">À propos de moi</h2>
+          <div class="md:flex items-center gap-8">
+            <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+              <img src="photo.jpg" alt="Photo de Constant AUDIBERT" class="w-64 h-64 rounded-full object-cover shadow-lg">
             </div>
+            <div class="md:w-2/3">
+              <p class="text-lg text-gray-600 mb-4">Je m’appelle Constant, étudiant en 1ère année de BUT Science des données à Niort.</p>
+              <p class="text-lg text-gray-600 mb-4">Mon objectif est d’obtenir un stage en data science pour appliquer mes compétences en machine learning et contribuer à des projets innovants.</p>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                  <div class="text-indigo-600 text-2xl mb-2"><i class="fas fa-graduation-cap"></i></div>
+                  <div class="font-medium">BUT SD 2e année</div>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                  <div class="text-indigo-600 text-2xl mb-2"><i class="fas fa-laptop-code"></i></div>
+                  <div class="font-medium">Projets</div>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                  <div class="text-indigo-600 text-2xl mb-2"><i class="fas fa-language"></i></div>
+                  <div class="font-medium">Anglais B2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mon parcours scolaire -->
+          <div class="mt-12 bg-gray-900 text-white py-8 px-6 rounded-lg">
+            <div class "md:flex items-center gap-8">
+              <div class="md:w-2/3">
+                <h2 class="text-2xl font-bold mb-4">Mon parcours scolaire</h2>
+                <p class="text-gray-200">J’ai suivi un parcours scolaire classique avec un baccalauréat général, spécialités Mathématiques et NSI (Numérique et Sciences Informatiques). À la fin du lycée, j’ai longuement hésité entre une licence d’informatique et le BUT Sciences des Données. Mon intérêt pour les statistiques et, plus globalement, pour les sciences m’a naturellement orienté vers une formation mêlant informatique, mathématiques et analyse de données. L’aspect professionnalisant du BUT m’a convaincu : il correspond davantage à ma manière d’apprendre et à mes aspirations concrètes pour l’avenir.</p>
+              </div>
+              <div class="md:w-1/3 mt-6 md:mt-0 flex justify-center">
+                <img src="pun.png" alt="Université de Poitiers" class="w-full max-w-sm rounded-lg shadow-lg object-cover">
+              </div>
+            </div>
+          </div>
+
+          <!-- Football -->
+          <div class="mt-12 bg-gray-100 py-8 px-6 rounded-lg">
+            <div class="md:flex items-center gap-8">
+              <div class="md:w-2/3">
+                <h2 class="text-2xl font-bold mb-4">Cyclisme</h2>
+                <p class="text-gray-600">C’est en 2021, lors du passage du Tour de France dans ma ville natale de Libourne, que j’ai véritablement découvert le cyclisme. J’ai été impressionné par l’ampleur de l’événement, par l’ambiance et par la performance des coureurs. Depuis ce jour, je me suis mis à m’y intéresser de plus en plus, jusqu’à en faire une véritable passion. Je pratique aujourd’hui le cyclisme en loisir, seul ou parfois avec des amis, pour le plaisir de l’effort et de la découverte. J’ai notamment réalisé le trajet Libourne-Bordeaux aller-retour, soit un peu plus de 100 km. Ce que j’aime dans ce sport, ce sont les valeurs qu’il véhicule : la persévérance, la rigueur, le respect et le dépassement de soi. J’essaie de retranscrire ces valeurs dans ma vie quotidienne, que ce soit dans mes études ou dans mes relations avec les autres.</p>
+              </div>
+              <div class="md:w-1/3 mt-6 md:mt-0 flex justify-center">
+                <img src="vélo.jpg" alt="cyclisme" class="w-full max-w-sm rounded-lg shadow-lg object-cover">
+              </div>
+            </div>
+          </div>
+
+          <!-- Mes expériences professionnelles -->
+          <div class="mt-12 bg-gray-900 text-white py-8 px-6 rounded-lg">
+            <div class="md:flex items-center gap-8">
+              <div class="md:w-2/3">
+                <h2 class="text-2xl font-bold mb-4">Mes expériences professionnelles</h2>
+                <p class="text-gray-200">L’été 2024 a marqué mes premières expériences professionnelles, que j’ai vécues avec beaucoup d’enthousiasme. J’ai cumulé deux jobs saisonniers : ouvrier viticole, un métier typique de ma région libournaise, notamment autour de Saint-Émilion, et plongeur dans un restaurant nommé « L’Embarcadère ». J’ai adoré travailler cet été. Gagner mes premiers revenus, travailler pour moi-même, a été pour moi le début d’une certaine forme d’indépendance. Ces expériences m’ont appris la rigueur, l’endurance et le sens du service. J’aime travailler dur et faire de mon mieux pour satisfaire les clients. Cela m’a donné encore plus de motivation pour continuer à m’investir dans mes projets, que ce soit personnels ou professionnels.</p>
+              </div>
+              <div class="md:w-1/3 mt-6 md:mt-0 flex justify-center">
+                <img src="" alt="vignes" class="w-full max-w-sm rounded-lg shadow-lg object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projets" class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Mes Projets</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="project-card bg-white rounded-xl shadow-md">
+              <img src="projet gestion fichier.jpg" alt="Nettoyage et conversion d'un fichier json en CSV avec Paul BABIN" class="w-full h-48 object-cover rounded-t-xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Gestion de fichiers</h3>
+                <p class="text-gray-600 mb-4">Ce projet vise à convertir un fichier JSON en un fichier CSV structuré avec des colonnes définies, via un script Python nommé transformerJsonToCsv.py. Ce fichier recense des informations détaillées sur les événements et activités de la région parisienne. Le script doit utiliser le point-virgule comme séparateur, gérer les accents pour une lisibilité sous Excel, et formater les dates/heures au style français. Il permet de développer des compétences essentielles : comprendre les attentes d'un client, suivre les normes de codage, maîtriser Python, structurer des données, appliquer des algorithmes de base, et saisir l'importance de la programmation dans la gestion de données.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Python</span>
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
+                </div>
+                <a href="Projet/SAE/Saé « Gestion de fichiers »/transformerJsonToCsv.py" download class="text-indigo-600 hover:underline">Télécharger le script</a>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card bg-white rounded-xl shadow-md">
+              <img src="projet analyse explo.jpg" alt="Analyse exploratoire à partir de données récoltées avec un questionnaire" class="w-full h-48 object-cover rounded-t-xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Tableau de données et analyse exploratoire</h3>
+                <p class="text-gray-600 mb-4">Nous avons entrepris une étude portant sur les habitudes sportives des étudiants du site de Niort de l'IUT de Poitiers. Après avoir élaboré la structure d'un questionnaire dédié, nous avons examiné 375 réponses à l'aide du logiciel Sphinx, afin de dresser des profils, d'observer les comportements et de recueillir les opinions des participants. Les conclusions ont été mises en valeur dans un rapport clair, organisé autour de quatre axes thématiques, accompagné d'un tableau de bord visuel comprenant six graphiques croisés. Ce travail a permis de développer nos aptitudes en traitement de données, en conception visuelle et en rédaction concise.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Sphinx</span>
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Word</span>
+                </div>
+                <a href="Projet/SAE/SAE 3enquête sport/Analyse exploratoire enquête sport.pdf" download class="text-indigo-600 hover:underline">Télécharger le rapport</a>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card bg-white rounded-xl shadow-md">
+              <img src="projet prod entreprise.jpg" alt="Production de données en entreprise" class="w-full h-48 object-cover rounded-t-xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Production de données en entreprise</h3>
+                <p class="text-gray-600 mb-4">Dans le contexte d'une analyse stratégique, nous avons conduit une étude statistique approfondie des départements gagnés par le Nouveau Front Populaire lors des élections législatives. Nous avons rassemblé des données publiques (recensement, taux de chômage) auprès de l'INSEE, élaboré des indicateurs démographiques et économiques détaillés, et réalisé des analyses statistiques avancées (moyennes, quartiles, écarts-types, effets de structure). Ces résultats ont été consolidés dans un rapport accompagné de graphiques et de tableaux commentés.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Word</span>
+                </div>
+                <a href="Projet/SAE/SAE Apprendre en situation la production de données en entreprise/Constant Audibert SAE stats.pdf" download class="text-indigo-600 hover:underline">Télécharger le rapport</a>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card bg-white rounded-xl shadow-md">
+              <img src="projet reporting.jpg" alt="Production de données en entreprise" class="w-full h-48 object-cover rounded-t-xl">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Création d'un reporting</h3>
+                <p class="text-gray-600 mb-4">Ce projet consiste à concevoir un outil sur mesure de gestion des notes pour le BUT SD1 en utilisant Excel. L'outil doit permettre d'enregistrer et de modifier des notes en indiquant le semestre, la compétence, la ressource ou la SAÉ grâce à des listes déroulantes interconnectées. Il inclut un tableau de bord interactif et intuitif pour afficher les notes par semestre, compétence ou module, accompagné de graphiques. Une fonction automatique de décision pour le jury, évaluant les résultats annuels, doit également être intégrée, en s'appuyant sur le langage VBA pour créer des Userforms, par exemple. Ce travail permet d'acquérir des compétences essentielles : répondre à un besoin spécifique, appliquer des bonnes pratiques de développement (commentaires, indentation, modularité), maîtriser les fonctions avancées d'Excel et VBA, et concevoir une interface utilisateur claire et fonctionnelle.</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">VBA</span>
+                  <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Word</span>
+                </div>
+                <a href="Projet/SAE/SAE Création d'un reporting/SAE Création reporting Audibert Constant et Giraud Orian.xlsm" download class="text-indigo-600 hover:underline">Télécharger l'application</a>
+                <a href="Projet/SAE/SAE Création d'un reporting/Guide d’utilisation SD1 Notes+.pdf" download class="text-indigo-600 hover:underline">Télécharger le tutoriel</a>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <!-- About Section -->
-        <section id="apropos" class="py-12 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4">
-                <!-- REPLACE [Votre Nom] and [Votre Université] with your details -->
-                <h2 class="text-3xl font-bold text-center mb-8">À propos de moi</h2>
-                <div class="md:flex items-center gap-8">
-                    <!-- REPLACE [URL-to-your-photo] with your profile photo URL (or remove this div if no photo) -->
-                    <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <img src="photo.jpg" alt="Photo de Constant AUDIBERT" class="w-64 h-64 rounded-full object-cover shadow-lg">
-                    </div>
-                    <div class="md:w-2/3">
-                        <p class="text-lg text-gray-600 mb-4">Je m’appelle Constant, étudiant en 1ère année de BUT Science des données à Niort</p>
-                        <p class="text-lg text-gray-600 mb-4">Mon objectif est d’obtenir un stage en data science pour appliquer mes compétences en machine learning et contribuer à des projets innovants.</p>
-                        <!-- REPLACE [X] with the number of projects, [Votre Niveau] with your English level, etc. -->
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-indigo-50 p-4 rounded-lg text-center">
-                                <div class="text-indigo-600 text-2xl mb-2"><i class="fas fa-graduation-cap"></i></div>
-                                <div class="font-medium">BUT SD 2e année</div>
-                            </div>
-                            <div class="bg-indigo-50 p-4 rounded-lg text-center">
-                                <div class="text-indigo-600 text-2xl mb-2"><i class="fas fa-laptop-code"></i></div>
-                                <div class="font-medium"> Projets</div>
-                            </div>
-                            <div class="bg-indigo-50 p-4 rounded-lg text-center">
-                                <div class="text-indigo-600 text-2xl mb-2"><i class="fas fa-language"></i></div>
-                                <div class="font-medium">Anglais B2</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Bilan Section -->
+        <section id="bilan" class="py-12 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Bilan annuel</h2>
+            <div class="prose lg:prose-lg text-gray-600">
+              <div style="text-align: justify;">
+                <strong>Bilan de ma première année en BUT SD 2024-2025</strong><br><br>
+                Ce bilan personnel permet de faire un compte rendu de ma première année en BUT Sciences des Données en abordant mes expériences, mes impressions, mes résultats, mes motivations, ainsi que les compétences que j’ai pu développer tout au long de l’année et les enseignements que j’en tire pour la suite de mon parcours.<br><br>
+                Après un parcours classique avec un bac général, cette première année universitaire a constitué ma toute première expérience dans l’enseignement supérieur. C’est donc un moment important d’adaptation et de découverte, et je peux dire aujourd’hui que je m’épanouis pleinement dans cette formation.<br><br>
+                Dès le début, j’ai été séduit par l’approche pédagogique concrète et appliquée du BUT Sciences des Données. L’alternance entre théorie et projets pratiques m’a permis de comprendre rapidement l’importance et l’utilité des compétences que j’acquiers. Travailler sur des cas réels, manipuler des données, concevoir des bases, coder en Python ou SQL, tout cela donne du sens à mes études et me motive à progresser chaque jour.<br><br>
+                J’ai pu développer des compétences techniques solides, notamment en programmation Python, en gestion de bases de données SQL, ainsi qu’en analyse statistique. Ces compétences sont enrichies par des enseignements complémentaires en mathématiques, probabilités, ainsi qu’en communication et gestion, ce qui rend la formation complète et adaptée aux exigences du métier.<br><br>
+                Le rythme soutenu de la formation, avec de nombreux projets à gérer simultanément, m’a permis d’acquérir une meilleure organisation et une plus grande rigueur dans mon travail. J’ai aussi appris à collaborer efficacement en groupe tout en développant mon autonomie, deux qualités indispensables dans ce domaine.<br><br>
+                Mes résultats sont encourageants et reflètent le travail fourni. Je suis satisfait des progrès accomplis, que ce soit dans la maîtrise des outils techniques ou dans ma capacité à résoudre des problèmes concrets liés aux données.<br><br>
+                Au-delà des compétences techniques, cette année a été très enrichissante sur le plan personnel. Je me sens désormais à ma place dans cette voie, plus confiant dans mes capacités et dans mon projet professionnel. L’ambiance au sein de la promotion est aussi un vrai plus, car elle crée un environnement stimulant et convivial.<br><br>
+                En conclusion, cette première année en BUT Sciences des Données a été une expérience très positive et formatrice. Elle m’a permis de construire des bases solides, de confirmer mon intérêt pour le traitement des données et de me projeter avec enthousiasme dans la suite de mon parcours.
+              </div>
             </div>
-        </section>
-        
-        <!-- Projects Section -->
-        <section id="projets" class="py-12">
-            <div class="max-w-7xl mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-8">Mes Projets</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Project 1: REPLACE placeholders with your project details -->
-                    <div class="project-card bg-white rounded-xl shadow-md">
-                        <!-- Upload a screenshot to Imgbb or GitHub -->
-                        <img src="projet gestion fichier.jpg" alt="Nettoyage et conversion d'un fichier json en CSV avec Paul BABIN" class="w-full h-48 object-cover rounded-t-xl">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Gestion de fichiers</h3>
-                            <p class="text-gray-600 mb-4">Ce projet vise à convertir un fichier JSON en un fichier CSV structuré avec des colonnes définies, via un script Python nommé transformerJsonToCsv.py . Ce fichier recense des informations détaillées sur les événements et activités de la région parisienne. Le script doit utiliser le point-virgule comme séparateur, gérer les accents pour une lisibilité sous Excel, et formater les dates/heures au style français. Il permet de développer des compétences essentielles : comprendre les attentes d'un client, suivre les normes de codage, maîtriser Python, structurer des données, appliquer des algorithmes de base, et saisir l'importance de la programmation dans la gestion de données.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <!-- REPLACE with tools used -->
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Python</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
-                            </div>
-                            <!-- REPLACE with your GitHub repo or report URL -->
-                            <a href="Projet/SAE/Saé « Gestion de fichiers »/transformerJsonToCsv.py" download class="text-indigo-600 hover:underline">Télécharger le script</a>
-                        </div>
-                    </div>
-                    <!-- Project 2: Duplicate and edit for each project -->
-                    <div class="project-card bg-white rounded-xl shadow-md">
-                        <!-- Upload a screenshot to Imgbb or GitHub -->
-                        <img src="projet analyse explo.jpg" alt="Analyse exploratoire à partir de données récoltées avec un questionnaire" class="w-full h-48 object-cover rounded-t-xl">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Tableau de données et analyse exploratoire</h3>
-                            <p class="text-gray-600 mb-4">Nous avons entrepris une étude portant sur les habitudes sportives des étudiants du site de Niort de l'IUT de Poitiers. Après avoir élaboré la structure d'un questionnaire dédié, nous avons examiné 375 réponses à l'aide du logiciel Sphinx, afin de dresser des profils, d'observer les comportements et de recueillir les opinions des participants. Les conclusions ont été mises en valeur dans un rapport clair, organisé autour de quatre axes thématiques, accompagné d'un tableau de bord visuel comprenant six graphiques croisés. Ce travail a permis de développer nos aptitudes en traitement de données, en conception visuelle et en rédaction concise.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <!-- REPLACE with tools used -->
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Sphynx</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Word</span>
-                            </div>
-                            <!-- REPLACE with your GitHub repo or report URL -->
-                            <a href="Projet/SAE/SAE 3enquête sport/Analyse exploratoire enquête sport.pdf" download class="text-indigo-600 hover:underline">Télécharger le rapport</a>
-                        </div>
-                    </div>
-                    <!-- Project 3: Duplicate and edit for each project -->
-                    <div class="project-card bg-white rounded-xl shadow-md">
-                        <!-- Upload a screenshot to Imgbb or GitHub -->
-                        <img src="projet prod entreprise.jpg" alt="Production de données en entreprise" class="w-full h-48 object-cover rounded-t-xl">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Production de données en entreprise</h3>
-                            <p class="text-gray-600 mb-4">Dans le contexte d'une analyse stratégique, nous avons conduit une étude statistique approfondie des départements gagnés par le Nouveau Front Populaire lors des élections législatives. Nous avons rassemblé des données publiques (recensement, taux de chômage) auprès de l'INSEE, élaboré des indicateurs démographiques et économiques détaillés, et réalisé des analyses statistiques avancées (moyennes, quartiles, écarts-types, effets de structure). Ces résultats ont été consolidés dans un rapport accompagné de graphiques et de tableaux commentés.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <!-- REPLACE with tools used -->
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Word</span>
-                            </div>
-                            <!-- REPLACE with your GitHub repo or report URL -->
-                            <a href="Projet/SAE/SAE Apprendre en situation la production de données en entreprise/Constant Audibert SAE stats.pdf" download class="text-indigo-600 hover:underline">Télécharger le rapport</a>
-                        </div>
-                    </div>
-                    <!-- Project 4: Duplicate and edit for each project -->
-                    <div class="project-card bg-white rounded-xl shadow-md">
-                        <!-- Upload a screenshot to Imgbb or GitHub -->
-                        <img src="projet reporting.jpg" alt="Production de données en entreprise" class="w-full h-48 object-cover rounded-t-xl">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Création d'un reporting</h3>
-                            <p class="text-gray-600 mb-4">Ce projet consiste à concevoir un outil sur mesure de gestion des notes pour le BUT SD1 en utilisant Excel. L'outil doit permettre d'enregistrer et de modifier des notes en indiquant le semestre, la compétence, la ressource ou la SAÉ grâce à des listes déroulantes interconnectées. Il inclut un tableau de bord interactif et intuitif pour afficher les notes par semestre, compétence ou module, accompagné de graphiques. Une fonction automatique de décision pour le jury, évaluant les résultats annuels, doit également être intégrée, en s'appuyant sur le langage VBA pour créer des Userforms, par exemple. Ce travail permet d'acquérir des compétences essentielles : répondre à un besoin spécifique, appliquer des bonnes pratiques de développement (commentaires, indentation, modularité), maîtriser les fonctions avancées d'Excel et VBA, et concevoir une interface utilisateur claire et fonctionnelle.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <!-- REPLACE with tools used -->
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Excel</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">VBA</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Word</span>
-                            </div>
-                            <!-- REPLACE with your GitHub repo or report URL -->
-                             <a href="Projet/SAE/SAE Création d'un reporting/SAE Création reporting Audibert Constant et Giraud Orian.xlsm" download class="text-indigo-600 hover:underline">Télécharger l'application</a>
-                            <a href="Projet/SAE/SAE Création d'un reporting/Guide d’utilisation SD1 Notes+.pdf" download class="text-indigo-600 hover:underline">Télécharger le tutoriel</a>
-                        </div>
-                    </div>
+          </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="py-12 bg-gray-50">
-            <div class="max-w-3xl mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-8">Contactez-moi</h2>
-                <div class="mt-8 grid md:grid-cols-2 gap-4">
-                    <!-- REPLACE with your email and LinkedIn -->
-                    <div class="bg-white p-4 rounded-lg text-center">
-                        <i class="fas fa-envelope text-indigo-600 text-xl mb-2"></i>
-                        <p><a href="constant.audibert@etu.univ-poitiers.fr" class="text-indigo-600 hover:underline">Mon mail universitaire</a></p>
-                    </div>
-                    <div class="bg-white p-4 rounded-lg text-center">
-                        <i class="fab fa-linkedin-in text-indigo-600 text-xl mb-2"></i>
-                        <p><a href="https://www.linkedin.com/in/constant-audibert-014591212/" class="text-indigo-600 hover:underline">Mon LinkedIn</a></p>
-                    </div>
-                </div>
+          <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contactez-moi</h2>
+            <div class="mt-8 grid md:grid-cols-2 gap-4">
+              <div class="bg-white p-4 rounded-lg text-center">
+                <i class="fas fa-envelope text-indigo-600 text-xl mb-2"></i>
+                <p><a href="mailto:constant.audibert@etu.univ-poitiers.fr" class="text-indigo-600 hover:underline">Mon mail universitaire</a></p>
+              </div>
+              <div class="bg-white p-4 rounded-lg text-center">
+                <i class="fab fa-linkedin-in text-indigo-600 text-xl mb-2"></i>
+                <p><a href="https://www.linkedin.com/in/constant-audibert-014591212/" class="text-indigo-600 hover:underline">Mon LinkedIn</a></p>
+              </div>
             </div>
+          </div>
         </section>
-    </main>
+      </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+      <!-- Footer -->
+      <footer class="bg-gray-800 text-white py-6">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <!-- REPLACE [Votre Nom] with your name -->
-            <p class="text-gray-400">© 2025 Constant AUDIBERT. Tous droits réservés.</p>
-            <!-- REPLACE with your GitHub and LinkedIn URLs -->
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="https://github.com/constantaudibert" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
-                <a href="https://www.linkedin.com/in/constant-audibert-014591212/" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in text-xl"></i></a>
-            </div>
+          <p class="text-gray-400">© 2025 Constant AUDIBERT. Tous droits réservés.</p>
+          <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://github.com/constantaudibert" class="text-gray-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+            <a href="https://www.linkedin.com/in/constant-audibert-014591212/" class="text-indigo-600 hover:underline">Mon LinkedIn</a>
+          </div>
         </div>
-    </footer>
+      </footer>
 
-    <!-- JavaScript for mobile menu toggle -->
-    <script>
+      <!-- JavaScript for mobile menu toggle -->
+      <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+          document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('mobile-menu').classList.add('hidden');
+          });
         });
-    </script>
-</body>
-</html>
+      </script>
+    </body>
+  </html>
