@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Title, description, and keywords for search engines -->
+  <meta name="description"
+    content="Apprenez-en plus sur moi, découvrez mes projets réalisés dans le cadre universitaire">
+  <title>Portfolio Constant AUDIBERT</title>
+
+  <!-- Tailwind CSS CDN for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for icons (e.g., GitHub, LinkedIn) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts: Inter for professional typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/photo.jpg" type="image/x-icon">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-sm fixed w-full top-0 z-10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <span class="text-xl font-bold text-indigo-600">Constant AUDIBERT</span>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-indigo-600 font-medium">Accueil</a>
+          <a href="#apropos" class="text-gray-700 hover:text-indigo-600 font-medium">À propos</a>
+          <a href="#projets" class="text-gray-700 hover:text-indigo-600 font-medium">Projets</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-500 hover:text-indigo-600 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <!-- Mobile menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-b-lg">
+        <div class="px-4 pt-2 pb-4 space-y-2">
+          <a href="#home" class="block text-gray-700 hover:text-indigo-600 py-2">Accueil</a>
+          <a href="#apropos" class="block text-gray-700 hover:text-indigo-600 py-2">À propos</a>
+          <a href="#projets" class="block text-gray-700 hover:text-indigo-600 py-2">Projets</a>
+          <a href="#contact" class="block text-gray-700 hover:text-indigo-600 py-2">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-16">
+    <!-- Home Section -->
+    <section id="home" class="py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Text Content -->
+          <div class="text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in-down">Bienvenue sur mon <span
+                class="text-indigo-600">Portfolio</span></h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-10">Étudiant en BUT Science des données.
+              Apprenez-en plus sur moi, découvrez mes projets réalisés dans le cadre universitaire et extrascolaire</p>
+            <div class="flex flex-col md:flex-row justify-center md:justify-start items-center gap-6">
+              <a href="#projets"
+                class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300">Voir
+                mes projets</a>
+              <a href="CV.pdf" download="CV_Constant_AUDIBERT.pdf"
+                class="flex items-center gap-2 bg-white text-gray-800 px-8 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-50 transition duration-300">
+                <i class="fas fa-file-pdf text-red-500"></i> Télécharger mon CV
+              </a>
+            </div>
+          </div>
+
+          <!-- CV Preview -->
+          <div class="flex justify-center md:justify-end">
+            <div class="max-w-sm w-full transform hover:scale-105 transition duration-300 cursor-pointer"
+              onclick="window.open('CV.pdf', '_blank')">
+              <div class="relative rounded-lg shadow-xl overflow-hidden border-4 border-white">
+                <img src="assets/images/CV.png" alt="Aperçu du CV" class="w-full h-auto">
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition duration-300 flex items-center justify-center">
+                  <span
+                    class="opacity-0 hover:opacity-100 bg-white text-gray-900 px-4 py-2 rounded-full font-bold shadow-lg transform translate-y-4 hover:translate-y-0 transition duration-300">Voir
+                    le CV</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mt-3 text-center"><i class="fas fa-eye mr-1"></i> Aperçu du CV (Cliquer
+                pour ouvrir)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">À propos de moi</h2>
+        <div class="md:flex items-center gap-12">
+          <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+            <div class="relative">
+              <div class="absolute inset-0 bg-indigo-600 rounded-full opacity-20 transform scale-105"></div>
+              <img src="assets/images/photo.jpg" alt="Photo de Constant AUDIBERT"
+                class="relative w-64 h-64 rounded-full object-cover shadow-xl border-4 border-white object-center">
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Je m'appelle Constant, j'ai 19 ans et je viens de
+              Libourne, une ville du Sud-Ouest de la France. Actuellement, je poursuis mes études à Niort où je suis
+              inscrit en BUT Science des Données.</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+              <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-indigo-50 transition duration-300">
+                <div class="text-indigo-600 text-3xl mb-3"><i class="fas fa-graduation-cap"></i></div>
+                <div class="font-semibold text-gray-800">BUT SD 2ème année</div>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-indigo-50 transition duration-300">
+                <div class="text-indigo-600 text-3xl mb-3"><i class="fas fa-language"></i></div>
+                <div class="font-semibold text-gray-800">Anglais B2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mon parcours scolaire -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl overflow-hidden shadow-2xl">
+          <div class="md:flex">
+            <div class="md:w-2/3 p-8 md:p-12">
+              <h3 class="text-2xl font-bold mb-6 flex items-center text-white">Mon parcours scolaire</h3>
+              <p class="text-white leading-relaxed">J’ai suivi un parcours scolaire classique avec un baccalauréat
+                général, spécialités Mathématiques et NSI (Numérique et Sciences Informatiques). À la fin du lycée, j’ai
+                longuement hésité entre une licence d’informatique et le BUT Sciences des Données. Mon intérêt pour les
+                statistiques et, plus globalement, pour les sciences m’a naturellement orienté vers une formation mêlant
+                informatique, mathématiques et analyse de données. L’aspect professionnalisant du BUT m’a convaincu : il
+                correspond davantage à ma manière d’apprendre et à mes aspirations concrètes pour l’avenir.</p>
+            </div>
+            <div class="md:w-1/3 bg-gray-800 relative min-h-[300px] md:min-h-0">
+              <img src="assets/images/pun.png" alt="Université de Poitiers"
+                class="absolute inset-0 w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mes expériences professionnelles -->
+        <div class="mt-16 bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+          <div class="md:flex flex-row-reverse">
+            <div class="md:w-2/3 p-8 md:p-12">
+              <h3 class="text-2xl font-bold mb-6 text-gray-900 flex items-center">Mes expériences professionnelles</h3>
+              <p class="text-gray-800 leading-relaxed">L’été 2024 a marqué mes premières expériences professionnelles,
+                que j’ai vécues avec beaucoup d’enthousiasme. J’ai cumulé deux jobs saisonniers : ouvrier viticole, un
+                métier typique de ma région libournaise, notamment autour de Saint-Émilion, et plongeur dans un
+                restaurant nommé « L’Embarcadère ». J’ai adoré travailler cet été. Gagner mes premiers revenus,
+                travailler pour moi-même, a été pour moi le début d’une certaine forme d’indépendance. Ces expériences
+                m’ont appris la rigueur, l’endurance et le sens du service. J’aime travailler dur et faire de mon mieux
+                pour répondre aux exigences des clients. Cela m’a donné encore plus de motivation pour continuer à
+                m’investir dans
+                mes projets, que ce soit personnels ou professionnels.</p>
+            </div>
+            <div class="md:w-1/3 p-6 flex flex-col gap-4 bg-gray-50 justify-center items-center">
+              <img src="assets/images/vignes.jpg" alt="vignes"
+                class="w-full h-48 rounded-lg shadow-md object-cover hover:scale-105 transition duration-300">
+              <img src="assets/images/embarcadere.jpg" alt="restaurant"
+                class="w-full h-48 rounded-lg shadow-md object-cover hover:scale-105 transition duration-300">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mon activité préférée -->
+        <div class="mt-16 bg-gray-900 text-white rounded-2xl overflow-hidden shadow-2xl">
+          <div class="md:flex">
+            <div class="md:w-2/3 p-8 md:p-12">
+              <h3 class="text-2xl font-bold mb-6 flex items-center text-white">Mon activité préférée</h3>
+              <p class="text-white leading-relaxed">C’est en 2021, lors du passage du Tour de France dans ma ville
+                natale de Libourne, que j’ai véritablement découvert le cyclisme. J’ai été impressionné par l’ampleur de
+                l’événement, par l’ambiance et par la performance des coureurs. Depuis ce jour, je me suis mis à m’y
+                intéresser de plus en plus, jusqu’à en faire une véritable passion. Je pratique aujourd’hui le cyclisme
+                en loisir, seul ou parfois avec des amis, pour le plaisir de l’effort et de la découverte. J’ai
+                notamment réalisé le trajet Libourne-Bordeaux aller-retour, soit un peu plus de 100 km. Ce que j’aime
+                dans ce sport, ce sont les valeurs qu’il véhicule : la persévérance, la rigueur, le respect et le
+                dépassement de soi. J’essaie de retranscrire ces valeurs dans ma vie quotidienne, que ce soit dans mes
+                études ou dans mes relations avec les autres.</p>
+            </div>
+            <div class="md:w-1/3 bg-gray-800 relative min-h-[300px] md:min-h-0">
+              <img src="assets/images/vélo.jpg" alt="cyclisme" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Mes Projets</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Project 1: Animation du jeu "Future of IA" -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/besoin%20du%20territoire.jpeg" alt="Besoin du territoire"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Animation du jeu "Future of IA"</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Projet de sensibilisation aux enjeux de l'intelligence artificielle et du numérique mené auprès d'élèves du lycée de la Venise Verte (Niort) en partenariat avec l'association Latitudes. Animation de 5 ateliers de 2H chacun. Travail de vulgarisation et de communication orale.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Communication</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Animation</span>
+              </div>
+              <a href="assets/documents/Rapport%20besoin%20du%20territoire.pdf" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Data Visualization Web -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet_metapolis.png" alt="Metapolis"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Data Visualization Web</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Application interactive d'exploration et de comparaison des villes françaises de plus de 20 000 habitants sous Python/Streamlit. Utilisation des données INSEE et intégration d'une IA Mistral avec interface vocale.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">IA / Mistral</span>
+                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Streamlit</span>
+              </div>
+              <a href="#"
+                class="demo-button inline-flex items-center justify-center w-full px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                data-video-src="assets/videos/Demo_metapolis.mp4">
+                <i class="fas fa-play mr-2"></i> Voir la démo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Outil de Reporting -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet reporting.jpg" alt="Reporting Excel"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Outil de Reporting</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Conception d'une application automatisée de gestion des notes universitaires en Excel/VBA. Intégration de tableaux de bord interactifs pour simplifier les saisies et automatiser les délibérations des jurys.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">VBA</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+              </div>
+              <a href="assets/documents/Guide%20d%E2%80%99utilisation%20SD1%20Notes+.pdf" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Application Excel / Google Sheets -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet_excel_gsheet.png" alt="Projet Excel / GSheet"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Application Excel / Google Sheets</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Création d'une application de gestion d'événements pour le département SD, conçue sous Excel/VBA et migrée vers Google Sheets (Apps Script). Automatisation des formulaires de saisie et des bases de données.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">GSheets</span>
+              </div>
+              <a href="#"
+                class="demo-button inline-flex items-center justify-center w-full px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                data-video-src="assets/videos/Demo_VBA.mp4">
+                <i class="fas fa-play mr-2"></i> Voir la démo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: Vizualisation Web : Données Kaggle -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet_searchflix.png" alt="Searchflix"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Vizualisation Web : Données Kaggle</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Moteur de recherche et d'exploration de films inspiré de la plateforme Netflix. Requêtage dynamique (php, chart.js) et filtres de recherche basés sur un jeu de données Kaggle.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">PHP</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Chart.js</span>
+                <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">SQL</span>
+              </div>
+              <a href="#"
+                class="demo-button inline-flex items-center justify-center w-full px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                data-video-src="assets/videos/Demo_searchflix.mp4">
+                <i class="fas fa-play mr-2"></i> Voir la démo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 6: Analyse prédictive du cours de l'argent -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet_argent.png" alt="Projet Argent"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Analyse prédictive du cours de l'argent</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Analyse et modélisation des cours de l'argent à partir des données historiques du FMI pour anticiper les tendances à l'horizon 2026. Décomposition de séries temporelles pour isoler la tendance et la saisonnalité.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Finance</span>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Analyse</span>
+                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Données</span>
+              </div>
+              <a href="#" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 7: Application R Shiny -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet_RShiny.png" alt="RShiny Application"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Application R Shiny</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Développement d'une application web interactive sous R Shiny dédiée à la visualisation de données complexes. Intégration de graphiques dynamiques pour l'exploration statistique en temps réel.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">R</span>
+                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Shiny</span>
+                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Statistiques</span>
+              </div>
+              <a href="#"
+                class="demo-button inline-flex items-center justify-center w-full px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                data-video-src="assets/videos/Demo_Rshiny.mp4">
+                <i class="fas fa-play mr-2"></i> Voir la démo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 8: Gestion de fichiers -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet gestion fichier.jpg" alt="Gestion de fichiers"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Gestion de fichiers</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Développement d'un script Python pour automatiser la conversion de fichiers JSON volumineux en formats CSV structurés. Gestion de structures de données complexes, formatage de dates et application des règles métiers du client.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9: Analyse exploratoire -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet analyse explo.jpg" alt="Analyse exploratoire"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Analyse exploratoire</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Étude statistique sur les habitudes sportives des étudiants à l'aide d'un questionnaire conçu sous Sphinx. Analyse de 375 réponses et création de tableaux de bord de synthèse pour en dégager des tendances comportementales.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Sphinx</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+              </div>
+              <a href="assets/documents/Analyse%20exploratoire%20enqu%C3%AAte%20sport.pdf" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 10: Données en entreprise -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet prod entreprise.jpg" alt="Production de données"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Données en entreprise</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Étude statistique approfondie des résultats des élections législatives à partir de données de l'INSEE. Élaboration d'indicateurs socio-économiques et réalisation d'analyses statistiques descriptives avancées (quartiles, moyennes, effets de structure).</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Word</span>
+              </div>
+              <a href="assets/documents/Production%20de%20donn%C3%A9es%20en%20entreprise.pdf" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 11: Analyse AcVC -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet final.jpg" alt="Analyse AcVC"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Analyse AcVC</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Étude approfondie sur les accidents de la vie courante (AcVC). Nettoyage de données brutes complexes sous Python et développement d'un tableau de bord interactif sous Power BI en suivant la méthodologie Agile.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Power BI</span>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 12: Base de données -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet bdr.png" alt="Base de données"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Base de données</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Conception et modélisation d'une base de données relationnelle (MCD) SQL pour une coopérative de sel. Développement d'une interface graphique de gestion et de requêtage en Python avec Tkinter.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">SQL</span>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 13: Estimation statistique -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet estimation.png" alt="Estimation"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Estimation statistique</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Estimation de la population de la région Île-de-France par des méthodes d'échantillonnage statistique sous R. Analyse de la précision des résultats et calcul d'intervalles de confiance rigoureux.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">R</span>
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+              </div>
+              <a href="assets/documents/Compte%20rendu%20SAE%20Echantillonnage%20et%20Estimation2.pdf" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 14: Indicateurs de performance (Fleury-Michon) -->
+          <div class="project-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img src="assets/images/projet_fleury_michon.png" alt="Projet Fleury-Michon"
+                class="w-full h-full object-cover transition duration-500 hover:scale-110">
+            </div>
+            <div class="p-6 flex flex-col h-full">
+              <h3 class="text-xl font-bold mb-3 text-gray-900">Indicateurs de performance (Fleury-Michon)</h3>
+              <p class="text-gray-600 mb-4 flex-grow text-sm leading-relaxed">Analyse et modélisation des indicateurs de performance logistique pour l'entreprise Fleury-Michon. Conception de tableaux de bord décisionnels pour optimiser le suivi des flux de production.</p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Logistique</span>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Excel</span>
+                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Indicateurs</span>
+              </div>
+              <a href="assets/documents/Rapport%20Fleury-Michon.pdf" target="_blank"
+                class="inline-flex items-center justify-center w-full px-4 py-2 bg-white text-indigo-600 border border-indigo-600 text-sm font-medium rounded-lg hover:bg-indigo-50 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <i class="fas fa-file-alt mr-2"></i> Voir le rapport
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bilan Section -->
+    <section id="bilan" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Bilans annuels</h2>
+        <div class="space-y-8">
+          <!-- Bilan 2ème année -->
+          <div class="bg-indigo-50 border-l-4 border-indigo-600 p-8 rounded-r-lg shadow-sm">
+            <div class="prose lg:prose-lg text-gray-700">
+              <h3 class="text-xl font-bold text-indigo-900 mb-4">Bilan de ma deuxième année en BUT SD 2025-2026</h3>
+              <p class="mb-4 text-justify">Cette deuxième année a été marquée par une montée en compétences majeure, me
+                permettant de consolider mes connaissances sur l’ensemble de la chaîne de traitement de la donnée (de la
+                collecte et du stockage à la visualisation et la modélisation statistique).</p>
+              <p class="mb-4 text-justify">Ce fut également l’occasion de faire mes premiers pas dans le monde
+                professionnel grâce à un stage de 3 mois chez Libon à Bordeaux, en tant que Data Analyst. Au sein de
+                cette entreprise, j’ai découvert un mode de fonctionnement professionnel agile et j'ai eu la chance de
+                participer activement à un projet d’envergure. Cette immersion m'a permis de mobiliser concrètement les
+                compétences acquises durant ma formation universitaire, tout en me formant de manière autonome au fil de
+                l’eau pour répondre précisément aux problématiques réelles de l’entreprise.</p>
+            </div>
+          </div>
+
+          <!-- Bilan 1ère année -->
+          <div
+            class="bg-gray-50 border-l-4 border-gray-400 p-8 rounded-r-lg shadow-sm opacity-80 hover:opacity-100 transition duration-300">
+            <div class="prose lg:prose-lg text-gray-700">
+              <h3 class="text-xl font-bold text-gray-800 mb-4">Bilan de ma première année en BUT SD 2024-2025</h3>
+              <p class="mb-4 text-justify">Après un parcours classique avec un bac général, cette première année
+                universitaire a constitué ma toute première expérience dans l’enseignement supérieur. C’est donc un
+                moment important d’adaptation et de découverte, et je peux dire aujourd’hui que je m’épanouis pleinement
+                dans cette formation.</p>
+              <p class="mb-4 text-justify">Dès le début, j’ai été séduit par l’approche pédagogique concrète et
+                appliquée du BUT Sciences des Données. L’alternance entre théorie et projets pratiques m’a permis de
+                comprendre rapidement l’importance et l’utilité des compétences que j’acquiers.</p>
+              <p class="mb-4 text-justify">En conclusion, cette première année en BUT Science des Données a été une
+                expérience très positive et formatrice. Elle m’a permis de construire des bases solides, de confirmer
+                mon intérêt pour le traitement des données et de me projeter avec enthousiasme dans la suite de mon
+                parcours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12 text-white">Contactez-moi</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <a href="mailto:constant.audibert@etu.univ-poitiers.fr"
+            class="group bg-gray-800 p-8 rounded-xl hover:bg-indigo-600 transition duration-300">
+            <i class="fas fa-envelope text-4xl mb-4 text-indigo-400 group-hover:text-white transition"></i>
+            <h3 class="text-xl font-semibold mb-2">Email</h3>
+            <p class="text-gray-400 group-hover:text-gray-100">constant.audibert@etu.univ-poitiers.fr</p>
+          </a>
+          <a href="https://www.linkedin.com/in/constant-audibert-014591212/" target="_blank"
+            class="group bg-gray-800 p-8 rounded-xl hover:bg-indigo-600 transition duration-300">
+            <i class="fab fa-linkedin-in text-4xl mb-4 text-indigo-400 group-hover:text-white transition"></i>
+            <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+            <p class="text-gray-400 group-hover:text-gray-100">Constant Audibert</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-white py-8 border-t border-gray-900">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-500 mb-4 md:mb-0">© 2026 Constant AUDIBERT. Tous droits réservés.</p>
+      <div class="flex space-x-6">
+        <a href="https://github.com/constantaudibert" class="text-gray-500 hover:text-white transition"><i
+            class="fab fa-github text-xl"></i></a>
+        <a href="https://www.linkedin.com/in/constant-audibert-014591212/"
+          class="text-gray-500 hover:text-white transition"><i class="fab fa-linkedin text-xl"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 hidden p-4">
+    <div id="modal-content"
+      class="relative w-full max-w-5xl bg-black rounded-lg shadow-2xl overflow-hidden animate-fade-in-up">
+      <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-gray-300 z-10 focus:outline-none">
+        <i class="fas fa-times text-3xl"></i>
+      </button>
+      <div id="modal-video-container" class="aspect-w-16 aspect-h-9 bg-black">
+        <!-- Video will be injected here via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
